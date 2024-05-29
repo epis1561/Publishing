@@ -1,1 +1,0 @@
-<? include_once ("./temp/index.php"); ?>

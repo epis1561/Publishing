@@ -1,1 +1,0 @@
-<?php header( 'Location: http://jccamp.kr/intro' ); ?>

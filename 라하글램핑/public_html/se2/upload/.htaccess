@@ -1,8 +1,0 @@
-<FilesMatch "\.(htaccess|htpasswd|[Pp][Hh][Pp]|[Pp]?[Hh][Tt][Mm][Ll]?|[Ii][Nn][Cc]|[Cc][Gg][Ii]|[Pp][Ll])">
-	Order allow,deny
-	Deny from all
-</FilesMatch>
-
-<IfModule mod_php5.c>
-	php_flag engine off
-</IfModule>
