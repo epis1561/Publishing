@@ -1,0 +1,158 @@
+@charset "utf-8";
+@font-face {
+    src: url("../css/font/강원교육모두-Light.woff");
+    font-family:"edu";
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.underbox{
+    position: relative;
+}
+.pretitle{
+    text-align: center;
+    font-family: 'GangwonEdu_OTFBoldA';
+    padding-top: 10%;
+}
+.pretitle p{
+    line-height: 24px;
+}
+.previewslide{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+body{
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
+min-height:-webkit-fill-available;
+height: fill-available;
+}
+.bg11 img{
+    object-fit: cover;
+    width: 100%;
+}
+.bg11{
+    width: 100%;
+}
+.underline{
+    width: 95%;
+    background-image: url('/images/main/underline.png');
+    height: 2px;
+    position: absolute;
+    bottom: -1%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.previewslide img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.previewslide-m img{
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+.previewslide-m{
+    display: none;
+    margin-bottom: 10%;
+}
+.swiper-wrapper{
+    height: auto !important;
+}
+.swiper-slide{
+    height: auto !important;
+}
+
+.previewlist{
+    width: 85%;
+    margin: 0 auto;
+}
+.previewlist{
+    position: relative;
+}
+.previewslide-m .swiper-slide{
+    min-height: 300px;
+}
+.previewslide-m .swiper-slide img{
+    min-height: 300px;
+}
+
+.guidemap{
+    text-align: center;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    max-height: 1000px;
+}
+.guidemap img{
+    width: 100%;
+
+   
+    object-fit: cover;
+}
+.previewlist{
+margin-bottom: 5%;
+}
+.map_btn{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.map_btn a{
+    display: inline-block;
+    width: 20%;
+    height: 35px;
+    border: 1px solid #002617;
+    border-radius: 50px;
+    line-height: 35px;
+    color: #002617;
+font-size: 18px;
+    font-family: 'edu';
+}
+@media(max-width:768px){
+    .guidemap{
+        max-height: 350px;
+    }
+    .previewslide{
+        display: none;
+    }
+    .previewslide-m{
+        display: block;
+    }
+    .roomswiper{
+        padding-bottom: 25% !important;
+    }
+
+}
+
+@media(max-width:500px){
+    .map_btn{
+        width: 100%;
+        font-size: 12px;
+    }
+    .map_btn a{
+        width: 23%;
+    }
+    .pretitle{
+        padding-top: 25%;
+    }
+    .guidemap{
+        width: 90%;
+        max-height:250px;
+        margin-bottom: 10%;
+    }
+
+}
+@media(max-width:400px){
+    .pretitle p{
+        font-size: 12px;
+        word-break: keep-all;
+    }
+}
