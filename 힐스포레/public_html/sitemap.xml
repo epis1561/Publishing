@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://hillsforet.kr/</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/about</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/preview</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/special/1</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/special/2</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>http://hillsforet.kr/special/4</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>http://hillsforet.kr/reservation</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/room/1</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/room/2</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>http://hillsforet.kr/room/4</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/room/5</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://hillsforet.kr/reserve</loc>
+  <lastmod>2024-03-04T07:21:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
