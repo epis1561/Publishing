@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url(./default.css);
+.header{
+    width: 100%;
+    height: 70px;
+position: relative;
+    background-color: #2F2F37;
+}
+
+.header_flex p{
+    color: #fff;
+    font-size: 14px;
+    margin-right: 4%;
+}
+.header_flex a{
+    display: inline-block;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #ED2B55;
+    color: #fff;
+    width: 172px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 4%;
+}
+.header_flex{
+    width: 17%;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;right: 0;
+    top: 5%;
+}
+.headerwrap .logo{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+#logo_mo{
+    display: none;
+}
+.header_flex{
+    top: 20%;
+}
+@media(max-width:768px){
+    .header_flex a{
+        width: 100%;
+        font-size: 12px;
+    }
+    .header_flex{
+
+        width: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header{
+        position: fixed;
+        bottom: 0;
+    }
+
+}

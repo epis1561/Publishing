@@ -1,0 +1,1 @@
+<input type="text" name="strData" value="<?php echo "강촌테마랜드 예약안내 {$_POST["buyername"]} 님 {$_POST["goodname"]} 예약되었습니다" ?> "> 

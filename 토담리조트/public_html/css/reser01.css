@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("../css/font/강원교육모두-Light.woff");
+    font-family:"edu";
+}
+.mainphoto{
+position: relative;
+background-image: url(/images/main/01_01.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+height: 90vh;
+width: 100%;
+}
+.mainphoto .textbox{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.mainphoto .textbox h1{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 60px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 20px;
+}
+.mainphoto .textbox p{
+    font-family: 'edu';
+    color: rgba(255,255,255,0.8);
+    font-size: 45px;
+}
+
+.mainphoto .textbox p:last-child{
+color: #fff;
+}
+
+.mainphoto-m{
+    display: none;
+}
+.mainphoto-m{
+    position: relative;
+background-image: url(/images/main/m/01_01.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+height: 60vh;
+width: 100%;
+position: relative;
+}
+
+
+.mainphoto-m .textbox-m{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 80%;
+text-align: center;
+}
+
+.mainphoto-m .textbox-m h1{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 40px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 20px;
+}
+
+.mainphoto-m .textbox-m p{
+    font-family: 'edu';
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+}
+@media(max-width:991px){
+
+    .mainphoto{
+        display: none;
+    }
+    .mainphoto-m{
+        display: block;
+    }
+}

@@ -1,0 +1,583 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+@font-face {
+	src: url("../CSS/font/VITRO\ CORE\ OTF.OTF");
+	font-family: "vitro1";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ INSPIRE\ OTF.OTF");
+	font-family: "vitro2";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ PRIDE\ OTF.OTF");
+	font-family: "vitro3";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeumOTF.otf");
+	font-family: "KOH1";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeum.ttf");
+	font-family: "KOH2";
+}
+
+@font-face {
+	src: url("../CSS/font/PretendardVariable.ttf");
+	font-family: "Pre";
+}
+
+/* default 셋팅 */
+*{
+	font-size: 10px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.main-wrap{
+    height: 62vh;
+    background-image: url(../images/check/main.jpg);
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-wrap #logo {
+	width: 225px;
+    height: 80px;
+	position: absolute;
+	top: 6%;
+	left: 5%;
+    background-image: url(/images/common/logo.png);
+    background-repeat: no-repeat;
+	z-index: 9999;
+}
+#logo{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.textbox{
+    text-align: center;
+    margin: 0 auto;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox h1{
+    font-family: "vitro1";
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.textbox p{
+    font-family: "vitro3";
+    color: #fff;
+    font-size: 28px;
+}
+.menubtn{
+    position: absolute;
+    font-size: 30px;
+	position: absolute;
+	right: 3%;
+	top: 4%;
+}
+.gnbwrap{
+    border-bottom: 1px solid #c2c2c2;
+    margin-bottom: 95px;
+}
+.gnb{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.gnb li{
+    line-height: 95px;
+    height: 95px;
+    display: inline-block;
+    margin-left: 75px;
+}
+.gnb li:first-child{
+    margin-left: 0;
+}
+.gnb li a{
+    font-family: "vitro3";
+    color: #686459;
+    font-size: 18px;
+}
+.submit input{
+	border:1px solid #686459;
+display: inline-block;
+width: 380px;
+height: 65px;
+font-family: "KOH1";
+background-color: #fff;
+cursor: pointer;
+color: #686459;
+}
+
+
+
+
+.container {
+	padding: 0 240px 0 240px;
+	height: 100%;
+	margin-bottom: 115px;
+}
+.container::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.reser-menu .text-box h1 {
+	color: #686459;
+	font-size: 40px;
+	font-family: "vitro1";
+	margin-bottom: 20px;
+}
+
+.reser-menu .text-box h1 span {
+	font-size: 30px;
+}
+
+.reser-menu .text-box p {
+	color: #000;
+	font-family: "Pre";
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.text-box {
+	margin-bottom: 60px;
+}
+
+/* 숙박 예약 안내 끝 */
+.user-form{
+	margin-bottom: 1px;
+}
+.user-form .container{
+	margin-bottom: 0;
+}
+.user-form .container h1{
+	font-family: "vitro1";
+	font-size: 30px;
+	color:#978d6e;
+	margin-bottom: 20px;
+}
+.user-form .container .left-text{
+	text-align: left;
+	font-family: "pre";
+	font-size: 18px;
+	margin-bottom: 70px;
+}
+.user-form .container h3{
+	font-size: 25px;
+	font-family: "vitro1";
+	color: #686459;
+	margin-bottom: 40px;
+}
+.user-form ul{
+	padding: 2% 0 2% 4%;
+	display: inline-block;
+}
+.user-form li{
+	list-style:disc;
+	font-size: 18px;
+	font-family: "KOH1";
+	margin-bottom: 50px;
+}
+/* .user-form li span{
+	font-size: 30px;
+	color: #686459;
+	margin-left: 8%;
+} */
+.user-form li::marker{
+	color: #686459;
+}
+.detail{
+	display: inline-block;
+	width: 65%;
+}
+.user-form .detail ul{
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+}
+.user-form .detail li{
+	list-style: none;
+	color: #686459;
+	margin-left: 8%;
+}
+.user-form .container p{
+	font-size: 24px;
+	font-family: "Pre";
+	color: #000;
+	text-align: right;
+	margin-bottom: 40px;
+}
+.user-form .info p{
+	text-align: left;
+	font-family: "KOH1";
+	font-size: 20px;
+	color: #b8b8b8;
+	line-height: 40px;
+}
+.user-form .price{
+	height: 120px;
+	background-color: #fdfaf4;
+	padding: 25px;
+	border: 1px solid #686459;
+	font-size: 30px;
+	font-family: "KOH1";
+	color: #686459;
+	padding: 3% 0 0 5.8%;
+	margin-bottom: 60px;
+}
+#price{
+	display: inline-block;
+	margin-left: 8%;
+	color: #686459;
+}
+.user-form .container .price p{
+	font-family: "KOH1";
+	display: inline-block;
+	font-size: 30px;
+}
+.user-form .price p span{
+	color: #000 !important;
+	font: 20px;
+}
+.user-form .container p span{
+	font-size: 24px;
+	color: red;
+}
+.user_num{
+	width: 57%;
+}
+.user_name{
+	width: 40%;
+}
+#user_name{
+	background-color: #fdfaf4;
+	height: 84px;
+	display: inline-block;
+	width: 100%;
+}
+#notice{
+	margin-bottom: 35px;
+}
+.user-form label{
+	display: block;
+	font-size: 30px;
+	font-family: "KOH1";
+	margin-bottom: 20px;
+}
+.user-form label span{
+	font-size: 30px;
+	color: red;
+
+}
+
+#user_num{
+	width: 100%;
+	height: 84px;
+	background-color: #fdfaf4;
+	margin-bottom: 40px;
+}
+.user-form input{
+	border: 1px solid #686459;
+}
+#user_info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+#user_info::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.user-form .container h4{
+	font-size: 30px;
+	font-family: "KOH1";
+	margin-bottom: 30px;
+}
+
+.user-form .container .notice{
+height: 440px;
+background-color: #fdfaf4;
+padding: 25px;
+border: 1px solid #686459;
+margin-bottom: 70px;
+}
+.user-form .container .notice p{
+	text-align:center;
+}
+.info{
+	margin-bottom: 110px;
+}
+.info-check .container h3{
+	font-size: 40px;
+	font-family: "vitro1";
+	color: #686459;
+	margin-bottom: 40px;
+}
+.info-check .reserinfo{
+	width: 100%;
+	height: 440px;
+	background-color: #fdfaf4;
+	padding: 2% 0 0 5%;
+	margin-bottom: 15px;
+	border: 1px solid #686459;
+}
+
+
+
+.info-check .reserinfo ul li{
+	list-style-type: disc;
+	color: #686459;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.info-check .reserinfo ul li span{
+	font-size: 30px;
+	font-family: "KOH1";
+	color: #000;
+}
+
+.info-check .total{
+	width: 100%;
+	height: 115px;
+	background-color: #fdfaf4;
+	padding: 2% 0 0 5%;
+	margin-bottom: 24px;
+	border: 1px solid #686459;
+}
+
+.info-check .total p{
+	font-size:30px;
+	font-family: "KOH1";
+}
+.info-check .container{
+	margin-bottom: 55px;
+}
+.info-check .total p span{
+	font-size: 20px;
+	font-family: "KOH1";
+}
+.info-check .checkbox .sizer{
+	width: 15px;
+	height: 15px;
+	margin-right: 8px;
+}
+.info-check .checkbox p{
+display: inline-block;
+font-size: 20px;
+font-family: "Pre";
+font-weight: 600;
+}
+.info-check .checkbox p a{
+font-size: 20px;
+font-family: "Pre";
+font-weight: 600;
+color: #000;
+}
+.info-check .checkbox{
+	padding-left: 4%;
+}
+.submit{
+	text-align: center;
+	margin-bottom: 90px;
+}
+.submit form{
+	margin-bottom: 35px;
+}
+.submit label a{
+	text-decoration: none !important;
+	font-family: "pre";
+	font-size: 20px;
+}
+.cancel-btn, .submit-btn{
+border:1px solid #686459;
+display: inline-block;
+width: 380px;
+height: 65px;
+}
+
+.cancel-btn{
+	margin-right: 1%;
+}
+.submit-btn{
+	margin-left: 1%;
+}
+ .submit-btn{
+	font-size: 18px;
+	font-family: "KOH1";
+	line-height: 65px;
+	height: 100%;
+	color: #686459;
+}
+
+/* slect버튼설정 */
+
+select {
+	-webkit-appearance: none;  /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	background: url(../images/reservation/selbtn.png) no-repeat 95% 50%;  /* 화살표 모양의 이미지 */ 
+	width: 100%; /* 원하는 너비설정 */
+	padding: 0.5em 0.5em; /* 여백으로 높이 설정 */
+	font-family: inherit;  /* 폰트 상속 */
+	border: 1px solid #999; 
+	border-radius: 0px; /* iOS 둥근모서리 제거 */
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	margin-bottom: 5px;
+	height:45px;
+  }
+  select::-ms-expand { 
+	display: none;
+  }
+input{
+	font-size: 25px;
+}
+
+@media (max-width: 1500px) {
+.container{
+	padding: 0 100px 0 100px;
+}
+
+
+}
+
+
+
+@media (max-width: 1200px) {
+	.textbox h1{
+		font-size: 45px;
+	}
+	.user-form li{
+		font-size: 22px;
+	}
+	.textbox p{
+		font-size: 35px;
+	}
+	.user-form .container h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	.left-text{
+		font-size: 17px !important;
+		text-align: center !important;
+	}
+	.user-form .container h3{
+		font-size: 30px;
+	}
+	.user-form .detail li{
+		word-break:break-all;
+	}
+}
+
+@media (max-width: 768px){
+	.gnb li{
+		height: 75px;
+		line-height: 75px;
+	}
+	.main-wrap{
+		height: 40vh;
+		background-image: url(../images/check/m/main.jpg);
+		background-repeat: no-repeat;
+	}
+	.main-wrap #logo {
+		background-image: url(/images/common/m/logo.png);
+		background-repeat: no-repeat;
+			}
+	.textbox h1{
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+	.textbox p{
+		font-size: 28px;
+	}
+	.gnb li a{
+		font-size: 16px;
+	}
+	.user-form li{
+		font-size: 12px;
+	}
+	.user-form .container .notice{
+		height: 300px;
+	}
+	.user-form .container h3{
+		font-size: 25px;
+	}
+	.container{
+		padding: 0 2% 0 2%;
+	}
+	.submit-btn{
+		width: 150px;
+		height: 45px;
+		font-size: 22px;
+		line-height: 45px;
+	}
+	.submit input{
+		width: 150px;
+		font-size: 25px;
+		height: 45px;
+	}
+	
+}
+
+@media (max-width: 500px){
+	.textbox h1{
+		font-size: 30px;
+	}
+	.textbox p{
+		font-size: 20px;
+	}
+	.user-form .detail ul li{
+		margin-bottom: 50px;
+	}
+
+}
+@media (max-width: 400px){
+	.main-wrap{
+		background-image: url(../images/check/500/main.jpg);
+		background-repeat: no-repeat;
+	}
+}

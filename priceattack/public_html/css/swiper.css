@@ -1,0 +1,121 @@
+@charset "utf-8";
+.swiper-slide{
+    width: 100% !important;
+}
+.preview .swiper-wrap{
+width: 80%;
+    transition: 0.3s;
+    z-index: 9997 !important;
+    padding-top:10%;
+}
+.price_swiper .swiper-wrap{
+    width: 100%;
+}
+.mainbtn1{
+    background: url('/images/common/arrow_left.png');
+    background-repeat: no-repeat;
+    width: 44px !important;
+    left: 65px !important;
+    top: 50% !important;
+color: transparent !important;
+}
+.mainbtn2{
+    background: url('/images/common/arrow_right.png');
+    background-repeat: no-repeat;
+    width: 44px !important;
+right: 65px !important;
+top: 50% !important;
+color: transparent !important;
+}
+.preview .swiper-wrap img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+@media(max-width:1500px){
+
+    
+}
+@media(max-width:991px){
+    .preview .swiper-wrap{
+
+        padding-top: 12%;
+    }
+}
+
+
+@media(max-width:768px){
+
+    .preview  .swiper01 .swiper-wrapper img{
+
+        height: 400px;
+    }
+
+}
+@media(max-width:500px){
+    .price_swiper .swiper-wrap{
+        margin-bottom: 0 !important;
+    }
+    .preview .swiper-wrap{
+
+        margin-bottom: 5%;
+        border-bottom: 1px solid #474747;
+    }
+    .preview  .swiper01 .swiper-wrapper img{
+
+        height: 240px;
+        margin: 0 auto;
+    }
+    .mainbtn1{
+        left: 20px !important;
+    }
+    .mainbtn2{
+        right: 20px !important;
+    }
+    .option-wrap{
+        padding: 3% 3%;
+    }
+    .infotext h3{
+        font-size: 17px;
+    }
+    .infotext p{
+        font-size: 14px;
+    }
+}
+@media(max-width:430px){
+    .preview .swiper-wrap{
+        width: 400px;
+    }
+
+}
+@media(max-width:380px){
+    .preview .swiper-wrap{
+        width: 350px;
+    }
+    .preview  .swiper01 .swiper-wrapper img{
+
+        height: 210px;
+        margin: 0 auto;
+    }
+    .mainbtn1{
+        left: 20px !important;
+    }
+    .mainbtn2{
+        right: 20px !important;
+    }
+}
+
+@media(max-width:320px){
+    .preview .swiper-wrap{
+        width: 300px;
+    }
+    .preview  .swiper01 .swiper-wrapper img{
+
+        height: 200px;
+        margin: 0 auto;
+    }
+    .mainbtn1,.mainbtn2{
+        top: 55% !important;
+    }
+   
+}

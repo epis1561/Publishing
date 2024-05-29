@@ -1,0 +1,490 @@
+
+
+@charset "utf-8";
+@font-face {
+    src: url("../css/font/강원교육모두-Light.woff");
+    font-family:"edu";
+}
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.videos{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+.videos video{
+margin-bottom: 3%;
+}
+
+#mc3, #mc2{
+    display: none;
+}
+
+/* 모바일 작업 기본틀 */
+body{
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
+min-height:-webkit-fill-available;
+height: fill-available;
+}
+.bg04{
+    display: none;
+}
+.right-flex .bg04{
+    display: block;
+}
+.mainslide-m{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    max-height:300px;
+    display: none;
+    padding-bottom: 12%;
+    position: relative;
+}
+.thirdblock .inner .title-m{
+    display: none;
+}
+.mainslide-m .scroll{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+    transform: translateX(-10%);
+    z-index: 9990;
+}
+
+.mainslide-m .scroll img{
+    width: auto;
+    height: auto;
+}
+.mainslide-m .swiper-pointer-events{
+    min-height: 300px;
+    height: 100%;
+}
+.mainslide-m .swiper-container-11{
+    min-height: 300px !important;
+    height: 100%;
+}
+.mainslide-m .swiper-slide{
+    min-height: 300px;
+    height: 100%;
+}
+.swiper-container-11{
+    min-height: 300px;
+    height: 100%;
+}
+.mainslide-m img{
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+.textflex-m{
+    display: none;
+}
+/* 모바일 작업 기본틀 */
+.mainslide{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 10%;
+    height:100vh;
+
+}
+.swiper-wrap{
+height: 100% !important;
+overflow: hidden;
+}
+.mainslide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainslide .title{
+    color: #fff;
+
+    letter-spacing: 16px;
+    text-align: center;
+    position: absolute;
+    top: 58%;left: 50%;
+    transform: translate(-50%,-58%);
+    z-index: 9990;
+}
+.mainslide .title h1{
+    font-size: 32px;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+.mainslide .swiper-container-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.scroll{
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 9998;
+}
+.bg01{
+    position: absolute;
+    bottom: -55%;
+    right: -5.55%;
+
+}
+.secondblock .bg03{
+    top: -5%;
+    left: -4%;
+}
+.secondblock .bg02{
+    bottom: -12%;
+    left: 5%;
+}
+.secondblock .right-flex .textflex .bg04{
+    bottom: 0;
+    right: 0;
+}
+.bg02,.bg03,.bg04{
+    position: absolute;
+}
+.secondblock{
+    position: relative;
+    margin-bottom: 10%;
+}
+.contentsbox{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.contentsbox .left-flex{
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    height: auto;
+    width: 30%;
+    justify-content: space-between;
+   
+}
+
+.secondblock .right-flex .first{
+    writing-mode: vertical-lr;
+    font-family: 'GangwonEdu_OTFBoldA';
+    padding-right: 1%;
+    font-size: 20px;
+    letter-spacing: 15px;
+    line-height: 30px;
+}
+.secondblock .right-flex .second{
+    word-break: keep-all;
+    font-family:"edu";
+    color: #7B7B7B;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 3%;
+    padding-left: 1%;
+    width: 70%;
+}
+.secondblock .right-flex{
+    width: 65%;
+}
+.left-flex #left2{
+    height: 35%;
+}
+.secondblock .contentsbox .right-flex .first i{
+    font-size: 8px;
+}
+.secondblock .right-flex{
+    display: flex;
+    flex-direction: column;
+}
+.secondblock .right-flex .textflex{
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+.contentsbox{
+    display: flex;
+    justify-content: space-between;
+}
+.thirdblock{
+    position: relative;
+    height:100%;
+}
+.thirdblock .inner{
+    width: 80%;
+    margin: 0 auto;
+}
+.thirdblock .inner .title h1{
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    margin-left: 25px;
+    color: #343434;
+}
+.thirdblock .inner .title img{
+    margin-bottom: 0.8%;
+}
+.bg05, .bg06, .bg07{
+    position: absolute;
+}
+.bg05{
+    top: 0;right: 2%;
+}
+.thirdblock .bg04{
+    top: 0;right: 10%;
+}
+.thirdblock .bg06{
+    bottom: 1%;left: 3%;
+}
+.thirdblock .bg07{
+    bottom: 7%;
+    right: 2%;
+    z-index: -1;
+}
+
+.fourthblock{
+    position: relative;
+
+}
+.fourthblock .flexbox{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.fourthblock .flexbox .textbox{
+    background-image: url('/images/main/bg08.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x:center;
+    width: 30%;
+    position: relative;
+}
+.fourthblock .flexbox .textbox p{
+position: absolute;
+top: 50%;left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+font-size: 30px;
+color: #002617;
+font-family: 'GangwonEdu_OTFBoldA';
+}
+.fourthblock .flexbox .textbox span{
+    color: #fff;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+.fourthblock .flexbox img{
+    object-fit: cover;
+    width: 32%;
+
+}
+.fourthblock .greenbox{
+    width: 100%;
+    height: 80%;
+    background-color: #002617;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,0);
+    z-index: -1;
+}
+
+
+/* 모바일 시작 */
+@media(max-width:768px){
+    .videos{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #mc3, #mc2{
+        display: block;
+    }
+    .thirdblock, .secondblock{
+        display: none;
+    }
+    .bg04{
+        display: block;
+    }
+    .right-flex .bg04{
+        display: none;
+    }
+    .swiper-horizontal{
+        min-height: 450px;
+    }
+    .secondblock .bg04{
+        display: none;
+    }
+    
+    .secondblock .bg04{
+        display: block;
+        bottom: 40px !important;
+    }
+    .thirdblock .inner{
+        width: 90%;
+    }
+.mainslide{
+    display: none;
+}
+.mainslide-m{
+    display: block;
+}
+.bg01{
+    display: none;
+}
+.bg02{
+    display: none;
+}
+.secondblock{
+    height:100%;
+}
+.secondblock .right-flex{
+    display: none;
+}
+.secondblock .textflex-m{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 30px;
+    font-size: 35px;
+    position: relative;
+}
+.secondblock .bg03{
+    display: none;
+}
+.contentsbox .left-flex{
+    display: block;
+    width: 75%;
+}
+.contentsbox{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.contentsbox .left-flex img:nth-child(1){
+    margin-bottom: 5%;
+    height: 65%;
+}
+.contentsbox .left-flex img:nth-child(2){
+    height: 30%;
+}
+.contentsbox .left-flex img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.textflex-m p{
+    writing-mode: vertical-lr;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+.textflex-m i{
+    font-size: 12px;
+}
+.secondblock .bg04{
+position: absolute;
+
+right:7%;
+transform: translate(-7%,-37%);
+}
+.thirdblock .bg05,.thirdblock .bg04, .thirdblock .bg06, .thirdblock .bg07{
+    display: none;
+}
+.thirdblock .inner .title h1{
+    font-size: 32px;
+}
+.thirdblock .inner .title{
+    margin-bottom: 4%;
+}
+.thirdblock .inner{
+    height: 100%;
+    position: relative;
+}
+.thirdblock .inner .title{
+    display: none;
+}
+.thirdblock .inner .title-m{
+    display: block;
+}
+.thirdblock .inner .title-m h1{
+    font-size: 30px;
+    display: inline-block;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+.thirdblock .inner .title-m img{
+    margin-right: 2%;
+    margin-bottom: 2.5%;
+}
+#mc2 .title-m h1{
+  
+        font-size: 30px;
+        display: inline-block;
+        font-family: 'GangwonEdu_OTFBoldA';
+    
+       
+    
+}
+#mc2 .title-m img{
+    margin-right: 2%;
+    margin-bottom: 2.5%;
+}
+#mc2{
+    margin-bottom: 20%;
+}
+.fourthblock{
+    display: none;
+}
+}
+@media(max-width:420px){
+
+.secondblock .bg04{
+    right: 5%;
+}
+}
+
+
+@media(max-width:380px){
+    .mainslide-m .scroll{
+        transform: translateX(-17%);
+    }
+    .secondblock .bg04{
+        right: 3%;
+    }
+}
+
+@media(max-width:380px) and (min-height:800px){
+    .mainslide-m .scroll{
+        left: 50%;
+    }
+    .secondblock .bg04{
+        bottom: 10%;
+    }
+}
+
+
+@media(max-width:320px){
+.mainslide-m .scroll{
+    transform: translateX(-13%);
+}
+.secondblock .bg04{
+
+    bottom: 15px !important;
+}
+}

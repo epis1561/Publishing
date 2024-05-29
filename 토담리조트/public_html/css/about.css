@@ -1,0 +1,425 @@
+@charset "utf-8";
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+
+/* 기본설정 */
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+@font-face {
+    src: url("../css/font/강원교육모두-Light.woff");
+    font-family:"edu";
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.aboutwrap{
+    scroll-behavior: smooth;
+}
+.aboutwrap img{
+display: block;
+width: 100%;
+object-fit: cover;
+height: 100%;
+}
+.aboutwrap #page1{
+    position: relative;
+}
+.aboutwrap #page1 .textbox{
+position: absolute;
+left: 50%;top: 50%;
+transform: translate(-50%,-50%);
+width: 100%;
+}
+
+.aboutwrap #page1 .textbox p:first-child{
+    font-family: 'edu';
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+ font-weight: 300;
+ margin-bottom: 15px;
+}
+.aboutwrap #page1 .textbox h1{
+    font-family:'edu';
+    color: rgba(255,255,255,0.8);
+    letter-spacing: -2.5px;
+font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.aboutwrap #page1 .textbox p{
+    font-family: 'edu';
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+}
+.aboutwrap #page1 .textbox p:last-child{
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+.aboutwrap #page2 .textbox{
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    }
+    
+    .aboutwrap #page2 .textbox #first{
+        font-family: 'edu';
+        font-size: 20px;
+        color: rgba(255,255,255,0.8);
+     font-weight: 300;
+     margin-bottom: 25px;
+     width: 18%;
+     word-break: keep-all;
+    }
+    .aboutwrap #page2 .textbox h1{
+        font-family:'edu';
+        color: rgba(255,255,255,0.8);
+        letter-spacing: -2.5px;
+    font-weight: 300;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .aboutwrap #page2 .textbox p{
+        font-family: 'edu';
+        font-weight: 300;
+        font-size: 20px;
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+word-break: keep-all;
+        margin: 0 auto;
+    }
+    .aboutwrap #page2 .textbox p:last-child{
+        width: 20%;
+        margin: 0 auto;
+    }
+
+
+    .aboutwrap #page3 .textbox{
+        position: absolute;
+        left: 50%;top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        }
+        
+        .aboutwrap #page3 .textbox #first{
+            font-family: 'edu';
+            font-size: 20px;
+            color: rgba(255,255,255,0.8);
+         font-weight: 300;
+         margin-bottom: 25px;
+         width: 20%;
+         word-break: keep-all;
+        }
+        .aboutwrap #page3 .textbox h1{
+            font-family:'edu';
+            color: rgba(255,255,255,0.8);
+            letter-spacing: -2.5px;
+        font-weight: 300;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .aboutwrap #page3 .textbox p{
+            font-family: 'edu';
+            font-weight: 300;
+            font-size: 20px;
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+    word-break: keep-all;
+            margin: 0 auto;
+        }
+        .aboutwrap #page3 .textbox p:last-child{
+            width: 20%;
+            margin: 0 auto;
+        }
+
+
+
+.aboutwrap #page4 .contents_box .contents{
+    width: 26%;
+}
+.aboutwrap #page4 .contents_box .contents .textbox{
+    text-align: center;
+}
+
+.aboutwrap #page4 .contents_box .contents .textbox h1{
+    font-family: 'NanumSquareNeo';
+    font-size: 24px;
+    font-weight: bold;
+    color: #454546;
+    margin-top: 46px;
+    margin-bottom: 23px;
+}
+.aboutwrap #page4 .contents_box .contents .textbox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 16px;
+    color: #6E6E6E;
+    line-height: 30px;
+    word-break: keep-all;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+.aboutwrap #page4 .contents_box .contents .textbox a{
+    font-size: 20px;
+        color:#1683CB;
+        font-family: 'NanumSquareNeo';
+        display: inline-block;
+        border: 1px solid #1683CB;
+        width: 240px;
+        height: 67px;
+        line-height: 67px;
+        text-align: center;
+        overflow: hidden;
+        background: transperent;
+        position: relative;
+}
+.aboutwrap #page4 .contents_box .contents .textbox a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(22,131,203,1) 100%, rgba(22,131,203,1) 100%);
+    z-index: -1;
+    transition: transform 0.5s ease-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.aboutwrap #page4 .contents_box .contents .textbox a:hover::before{
+    transform: scaleX(1);
+}
+.aboutwrap #page4 .contents_box .contents .textbox a:hover{
+    color:#fff;
+    bottom: none; 
+}
+.aboutwrap #page4 .contents_box .contents{
+    display: flex;
+    flex-direction: column;
+}
+.aboutwrap #page4 .contents_box{
+    display: flex;
+    justify-content:center;
+    padding-top: 5%;
+}
+.aboutwrap #page4 .contents_box .contents:nth-child(1){
+    margin-right: 1%;
+}
+.aboutwrap #page4 .contents_box .contents:nth-child(2){
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.aboutwrap #page4 .contents_box .contents:nth-child(3){
+    margin-left: 1%;
+}
+.aboutwrap #page5 .textbox{
+    text-align: center;
+    padding-top: 8%;
+}
+.aboutwrap #page5 .textbox #first{
+    font-family: 'NanumSquareNeo';
+    font-size: 18px;
+    color: #6E6E6E;
+    letter-spacing: 5.4px;
+    margin-bottom: 25px;
+}
+.aboutwrap #page5 .textbox h1{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 60px;
+    color: #454546;
+    margin-bottom: 35px;
+}
+.aboutwrap #page5 .textbox img{
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.aboutwrap #page5 .textbox #second{
+    font-family: 'NanumSquareNeo';
+    font-size: 18px;
+    color: #6E6E6E;
+    margin-bottom: 60px;
+}
+.aboutwrap #page5 .map{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 88px;
+}
+.photowrap{
+    height: 100%;
+}
+
+
+
+
+/* footer */
+#page6 .textbox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 18px;
+    color: #6E6E6E;
+    letter-spacing: 5.4px;
+    font-weight: 600;
+}
+
+#page6 .textbox h1{
+font-family: 'GangwonEdu_OTFBoldA';
+font-size: 60px;
+color: #454546;
+}
+
+/* footer를 #page6으로 넣어사용*/
+/* #page6{
+    margin-top: 80px;
+} */
+
+.aboutwrap-m{
+    display: none;
+}
+.aboutwrap-m img{
+    width: 100%;
+
+    object-fit: cover;
+    height: 100%;
+}
+.aboutwrap-m .container{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.aboutwrap-m #about-m4{
+    height: 80vh;
+    padding-bottom: 10%;
+}
+
+.aboutwrap-m #about-m1{
+    background-image: url('/images/about/m/01_01.jpg');
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 20%;
+}
+.aboutwrap-m #about-m2{
+    background-image: url('/images/about/m/01_02.jpg');
+    background-size: cover;
+    object-fit: cover;
+}
+.aboutwrap-m #about-m3{
+    background-image: url('/images/about/m/01_03.jpg');
+    background-size: cover;
+    object-fit: cover;
+}
+
+#about-m1 .textbox #first ,#about-m2 .textbox #first , #about-m3 .textbox #first{
+    font-family: 'edu';
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    margin-bottom: 25px;
+    word-break: keep-all;
+}
+#about-m1 .textbox h1,#about-m2 .textbox h1,#about-m3 .textbox h1{
+    font-family: 'edu';
+    font-size: 44px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 25px;
+    word-break: keep-all;
+}
+#about-m1 .textbox #second,#about-m2 .textbox #second,#about-m3 .textbox #second{
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    line-height: 20px;
+    word-break: keep-all;
+    margin-bottom: 5px;
+}
+#about-m1 .textbox,#about-m2 .textbox,#about-m3 .textbox{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#about-m4{
+    text-align: center;
+}
+#about-m4 .textbox{
+    padding: 6% 0;
+}
+#about-m4 .textbox #first{
+    font-family: 'NanumSquareNeo';
+    font-size: 12px;
+    font-weight: 600;
+    color: #6E6E6E;
+    letter-spacing: 3.6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about-m4 .textbox h1{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 25px;
+    color: #454546;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#about-m4 img{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+#about-m2 .textbox p:last-child,#about-m3 .textbox p:last-child{
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    line-height: 20px;
+    word-break: keep-all;
+}
+/* 모바일 시작할게요@!!!!! */
+@media(max-width:991px){
+    .aboutwrap{
+        display: none;
+    }
+    .aboutwrap-m{
+        display: block;
+    }
+    body{
+        overflow-y: scroll !important;
+       }
+}
+
+
+@media(max-width:500px){
+    .map iframe{
+        height: 300px;
+    }
+
+}
+
+
+@media(max-width:320px){
+    #about-m1 .textbox h1, #about-m2 .textbox h1, #about-m3 .textbox h1{
+        font-size: 38px;
+    }
+    .aboutwrap-m #about-m4{
+        padding-bottom: 12%;
+    }
+.aboutwrap-m iframe{
+    height: 250px;
+}
+
+}

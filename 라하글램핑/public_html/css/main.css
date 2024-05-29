@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+.mainslide{
+    height: 100%;
+    position: relative;
+}
+.mainslide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main2{
+    width: 100%;
+    height: auto;
+    margin-bottom: 7%;
+}
+.main2 .flex{
+    display: flex;
+}
+.main2 .text{
+    width: 50%;
+    height: auto;
+    position: relative;
+    line-height: 25px;
+    font-size: 14px;
+}
+.main2 .text h3{
+    margin-bottom: 20%;
+    font-size: 20px;
+    color: #3B60B8;
+    font-family: 'medium';
+}
+.main2 .text .textposition1{
+position: absolute;
+top: 9%;
+left: 8%;
+color: #505050;
+font-family: 'medium';
+}
+.main2 .text .textposition2{
+    position: absolute;
+    top: 9%;
+    right: 8%;
+    color: #505050;
+font-family: 'medium';
+padding: 0 5%;
+}
+.main2 .flex:nth-child(2){
+    text-align: right;
+}
+.main2 .imgbox{
+   width: 50%;
+    height: auto;
+   
+}
+.main2 img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 420px;
+}
+.roompreview{
+    margin-bottom: 150px;
+}
+.roompreview h2{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'medium';
+}
+.roompreview h2::after{
+content:'';
+display: block;
+width: 4%;
+height: 2px;
+background-color:#000;
+margin: 0 auto;
+margin-top: 35px;
+margin-bottom: 70px;
+}
+.roompreview p{
+text-align: center;
+line-height: 25px;
+font-size: 14px;
+color: #505050;
+margin-bottom: 110px;
+font-family: 'medium';
+}
+.preview_text{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 25px;
+    font-family: 'mid';
+    padding: 1% 5% 4% 5%;
+    
+}
+.preview_text span{
+    display: block;
+    font-family: 'light';
+    color: #505050;
+}
+.banner{
+
+position:relative;
+margin-bottom: 7%;
+}
+.banner img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.banner h3{
+    font-size: 30px;
+    letter-spacing: 7.5px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'medium';
+}
+.imgcover{
+  background-color: #ceb293;
+  border: 1px solid #000;
+}
+.imgcover img{
+  border-bottom: 1px solid #000;
+}
+.mainslide span{
+    font-size: 9px;
+    color: #fff;
+    margin-bottom: 5%;display: block;
+    font-family: 'medium';
+}
+.mainslide h2{
+    font-size: 30px;
+    color: #fff;
+font-family: 'medium';
+letter-spacing: 7.5px;
+}
+.mainslide .textbox{
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 9998;
+    top: 45%;
+    left: 50%;
+}
+.preview-m{
+    display: none;
+}
+.roomlist{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+@media(max-width:768px){
+
+    .banner img{
+
+    height: auto;
+    } 
+}
+
+@media(max-width:500px){
+  .roomlist{
+  flex-direction: column;
+  }
+  .imgcover{
+    
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+  .imgcover img{
+    width: 100%;
+  }
+    .mainslide{
+        height: auto;
+    }
+    .main2 .text{
+        line-height: 17px;
+        font-size: 11px;
+      }
+      .main2 .text h3{
+        font-size: 17px;
+        margin-bottom: 8%;
+      }
+      .main2 .text .textposition1{
+        top: 7%;
+        left: 4%;
+        padding: 0 5%;
+      }
+      .main2{
+        height: 65%;
+        margin-bottom: 20%;
+      }
+      .main2 .flex{
+        height: 50%;
+      } 
+      .main2 img{
+        height: 100%;
+      }
+      .mainslide h2{
+        font-size: 20px;
+      }
+      .mainslide span{
+        font-size: 10px;
+      }
+      .mainslide .textbox{
+        top: 47%;
+      }
+      .roompreview h2::after{
+        width: 18%;
+        margin-top: 7%;
+        margin-bottom: 5%;
+      }
+      .roompreview h2{
+        font-size: 24px;
+      }
+      .roompreview p{
+        font-size: 12px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 7%;
+        line-height: 21px;
+      }
+      .roompreview{
+        margin-bottom: 15%;
+      }
+      .banner img{
+        height: 65% !important;
+      }
+      .banner h3{
+        width: 100%;
+        font-size: 18px;
+      }
+      .banner{
+        margin-bottom: 15%;
+      }
+      #banner2{
+        height: 35%;
+        margin-bottom: 20%;
+      }
+      #banner2 img{
+        height: 100% !important;
+      }
+      
+}

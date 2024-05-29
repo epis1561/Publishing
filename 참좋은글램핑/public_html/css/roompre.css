@@ -1,0 +1,123 @@
+@charset "utf-8";
+@font-face {
+    src: url("../css/font/강원교육모두-Light.woff");
+    font-family:"edu";
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
+min-height:-webkit-fill-available;
+height: fill-available;
+}
+.roomswiper .textbox{
+    position: relative;
+}
+.click{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    display: inline-block;
+
+}
+.roomswiper{
+    width: 100%;
+    height: auto;margin: 0 auto;
+    overflow: hidden;
+    padding-top: 5%;
+    position: relative;
+}
+.roomswiper .swiper-wrap{
+    width: auto;
+}
+.roomswiper img{
+    object-fit: cover;
+    width: 100%;
+    padding-bottom: 5%;
+}
+.roomswiper .swiper-slide{
+    width: calc(100%/3) !important;
+    height: auto !important;
+}
+.roomswiper .textbox{
+    width: 80%;
+    text-align: left;
+    color: #000;
+}
+.roomswiper .textbox p{
+    font-family:"edu";
+    font-size: 16px;
+    color: #7B7B7B;
+    line-height: 24px;
+}
+.roomswiper .textbox h2{
+    font-family: 'GyeonggiBatang';
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.roomswiper .textbox h3{
+    margin-bottom: 8px;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+.roomswiper .roombtn2{
+    display: none;
+}
+
+@media(max-width:768px){
+    .roomswiper .textbox{
+        width: 100%;
+    }
+    .roomswiper .swiper-slide{
+        width: 100% !important;
+    }
+    .roomswiper{
+        padding-bottom: 15%;
+    }
+
+.roomswiper .roombtn2{
+position: absolute;
+top: 95%;
+right: 3%;
+    display: block;
+    width: 50px;
+    height: 47px;
+    background-image: url("/images/roompre/m/next.png");
+    z-index: 9990;
+    }
+ 
+}
+@media(max-width:420px){
+    .roomswiper .roombtn2{
+        top: 92%;
+    }
+
+}
+
+@media(max-width:390px){
+.roomswiper .roombtn2{
+    top: 82%;
+}
+@media(max-width:390px) and (min-height:800px){
+    .roomswiper .roombtn2{ top: 91%;}
+}
+}
+@media(max-width:380px){
+
+    .roomswiper .roombtn2{
+        top: 87%;
+    }
+}
+

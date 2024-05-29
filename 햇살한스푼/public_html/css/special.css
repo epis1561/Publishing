@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@font-face {
+	src: url("../css/font/PretendardVariable.ttf");
+	font-family: "Pre";
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.mainwrap{
+    width: 100%;
+    height: 100%;
+}
+.mainwrap img{
+    object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.mainwrap::after{
+    content:'';
+    display: block;
+    width: 12%;
+    border-bottom: 5px solid #000;
+    margin: 0 auto;
+    margin-top: -4px;
+    
+}
+
+.specialwrap{
+    margin-top: 130px;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+.special_title h2{
+    margin-bottom: 15px;
+    font-family: 'GowunDodum-Regular';
+    font-size: 40px;
+    font-weight: 400;
+}
+.specialwrap p{
+    margin-bottom: 12%;
+    font-family: 'GowunDodum-Regular';
+    font-size: 18px;
+    color: #969696;
+}
+.special_title{
+    
+width: 100%;
+    text-align: center;
+}
+#special1{
+    width: 100%;
+    height: 82px;
+}
+#special2{
+    width: 100%;
+top: 87.5%;
+    position: absolute;
+}
+
+#special3{
+    position: absolute;
+    width: 100%;
+    top: -12.5%;
+}
+#special4{
+    position: absolute;
+    width: 100%;
+    top: -12.5%;
+}
+.animation{
+    animation-name:down;
+    animation-duration: 1.4s;
+    animation-iteration-count:infinite;
+    margin-top: 0;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes down{
+    from{top: 215%;}
+
+    to{top: 300%;}
+}
+.flex_right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.flex_right_m{
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    display: none;
+}
+.spimgbox{
+    width: 50%;
+    max-height: 670px;
+}
+.spimgbox img{
+    object-fit: cover;
+}
+.textbox{
+    width: 50%;
+    text-align: center;
+    padding: 0 10%;
+}
+.textbox h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'GowunDodum-Regular';
+}
+.textbox p{
+    line-height: 25px;
+    word-break: keep-all;
+    font-size: 18px;
+    font-family: 'GowunDodum-Regular';
+    padding:  0 12%;
+}
+.textbox h2::after{
+    content:'';
+    display: block;
+    width: 12%;
+    border-bottom: 2px solid #000;
+    margin: 0 auto; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#h2_2 h2::after{
+width: 20%;
+}
+.textbox h2:nth-child(2)::after,.textbox h2:nth-child(3)::after,.textbox h2:nth-child(4)::after{
+    width: 10%;
+}
+.flex_left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+@media (max-width: 768px){
+    .animation{
+        display: none;
+    }
+    .flex_right{
+        display: none;
+    }
+    
+    .flex_left{
+display: none;
+    }
+    .spimgbox{
+        width: 100%;
+    }
+    .textbox{
+        padding: 0;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .flex_right_m{
+        display: block;
+    }
+    .textbox{
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
+    .mainwrap{
+        height: 45vh !important;
+    }
+    .mainwrap::after{
+        width: 40%;
+    }
+    .spimgbox img{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .special_title h2{
+        font-size: 30px;
+    }
+    .specialwrap p{
+        font-size: 20px;
+    }
+    .textbox h2{
+        font-size: 24px;
+    }
+    .textbox p{
+        font-size: 16px;
+    }
+    #pension{
+        
+    }
+}
