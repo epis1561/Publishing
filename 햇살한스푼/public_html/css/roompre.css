@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@font-face {
+	src: url("../css/font/PretendardVariable.ttf");
+	font-family: "Pre";
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.mainwrap{
+    width: 100%;
+    height: 100%;
+	background-image: url(/images/main/bg03.jpg);
+}
+.mainwrap img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+	display: block;
+}
+.mainwrap::after{
+    content:'';
+    display: block;
+    width: 12%;
+    border-bottom: 5px solid #000;
+    margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 9998;
+	margin-top: -1px;
+}
+.roomprewrap{
+	margin-top: -4px;
+    text-align: center;
+    position: relative;
+    height: 1300px;
+
+background-image: url(/images/main/bg03.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.roompre_title h2{
+    margin-bottom: 15px;
+    font-family: 'GowunDodum-Regular';
+    font-size: 40px;
+    font-weight: 400;
+	padding-top: 130px;
+}
+.roomprewrap p{
+    margin-bottom: 13%;
+    font-family: 'GowunDodum-Regular';
+    font-size: 18px;
+    color: #969696;
+}
+.roompre_title{
+    
+width: 100%;
+text-align: center;
+}
+.roompre_title .map{
+    width: 60%;
+}
+
+
+.animation{
+    animation-name:down;
+    animation-duration: 1.4s;
+    animation-iteration-count:infinite;
+    margin-top: 0;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes down{
+    from{top: 22%;}
+
+    to{top: 29%;}
+}
+.roommap{
+    text-align: center;
+}
+
+.roommap img{
+    margin-bottom: 150px;
+}
+.roommap .roompre_title{
+    margin-bottom: 165px;
+}
+
+.roombg{
+	height: auto;
+	padding: 0 15% 0 15%;
+}
+.roombg h2, .roombg p{
+	text-align: center;
+	font-family: 'GowunDodum-Regular';
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.roombg h2{
+
+	margin-bottom: 30px;
+}
+
+.roombg p{
+	margin-bottom: 120px;
+	font-family: 'GowunDodum-Regular';
+	font-size: 18px;
+	color: #969696;
+}
+.box_all{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-self: space-between;
+}
+
+.box_wrap{
+	width: 48%;
+	height: auto;
+	position: relative;
+	margin: 1%;
+}
+.box_wrap .text{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;left: 50%;
+	transform: translate(-50%,-50%);
+	transition:all 1.2s;
+}
+
+.box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(70%); 
+	transition: all 1.2s;
+}
+
+.text p{
+	position: absolute; left: 50%;top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 22px;
+	font-family: 'GowunDodum-Regular';
+	color: #000;
+
+}
+.text a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+
+}
+
+.box_wrap:hover img{
+border-radius: 50%;
+overflow: hidden;
+filter: brightness(100%);
+
+}
+
+@media(max-width:1200px){
+.roomprewrap{
+	height: 750px;
+}
+}
+@media(max-width:991px){
+.roomprewrap{
+	height: auto;
+	margin-bottom: 100px;
+}
+}
+@media(max-width:768px){
+	.mainwrap::after{
+		width: 25%;
+		margin-top: 0;
+	}
+	.mainwrap{
+		height: 40vh !important;
+	}
+	.animation{
+		display: none;
+	}
+	.roompre_title .map{
+		width: 85%;
+	}
+	.roombg p{
+		margin-bottom: 100px;
+	}
+	.roomprewrap{
+		background-image: none;
+	}
+	
+}
+
+@media(max-width:500px){
+	.roompre_title h2{
+		font-size: 30px;
+		padding-top: 70px;
+	}
+	.roomprewrap p{
+		font-size: 20px;
+		margin-bottom: 60px;
+	}
+
+	.roombg p{
+		margin-bottom: 80px;
+	}
+	.roomprewrap{
+		margin-bottom: 0px
+	}
+	.roombg{
+		margin-bottom: 0;
+	}
+}
