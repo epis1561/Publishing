@@ -1,0 +1,615 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+@font-face {
+	src: url("../CSS/font/VITRO\ CORE\ OTF.OTF");
+	font-family: "vitro1";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ INSPIRE\ OTF.OTF");
+	font-family: "vitro2";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ PRIDE\ OTF.OTF");
+	font-family: "vitro3";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeumOTF.otf");
+	font-family: "KOH1";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeum.ttf");
+	font-family: "KOH2";
+}
+
+@font-face {
+	src: url("../CSS/font/PretendardVariable.ttf");
+	font-family: "Pre";
+}
+/* default 셋팅 */
+table{
+	margin-bottom: 3%;
+}
+.tg  {border-collapse:collapse;border-spacing:0; width: 80%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-mxrt{color:#fe0000;font-weight:bold;text-align:center;vertical-align:top}
+*{
+	font-size: 10px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.main-wrap{
+    height: 62vh;
+    background-image: url(../images/check/main.jpg);
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-wrap #logo {
+	width: 225px;
+    height: 80px;
+	position: absolute;
+	top: 6%;
+	left: 5%;
+    background-image: url(/images/common/logo.png);
+    background-repeat: no-repeat;
+	z-index: 9999;
+}
+#logo{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.textbox{
+    text-align: center;
+    margin: 0 auto;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox h1{
+    font-family: "vitro1";
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.textbox p{
+    font-family: "vitro3";
+    color: #fff;
+    font-size: 28px;
+}
+.menubtn{
+    position: absolute;
+    font-size: 30px;
+	position: absolute;
+	right: 3%;
+	top: 4%;
+}
+.gnbwrap{
+    border-bottom: 1px solid #c2c2c2;
+    margin-bottom: 95px;
+}
+.gnb{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.gnb li{
+    line-height: 95px;
+    height: 95px;
+    display: inline-block;
+    margin-left: 75px;
+}
+.gnb li:first-child{
+    margin-left: 0;
+}
+.gnb li a{
+    font-family: "vitro3";
+    color: #686459;
+    font-size: 18px;
+}
+
+
+
+
+
+.container {
+	padding: 0 400px 0 400px;
+	height: 100%;
+	margin-bottom: 115px;
+}
+.container::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+
+
+/* 숙박 예약 안내 끝 */
+.user-form{
+	margin-bottom: 70px;
+}
+.user-form .container{
+	margin-bottom: 0;
+}
+.user-form .container h1{
+	font-family: "vitro1";
+	font-size: 30px;
+	color:#978d6e;
+	margin-bottom: 10px;
+}
+.user-form ul{
+	margin-bottom: 10px;
+}
+.user-form ul li{
+	font-size: 16px;
+	font-weight: bold;
+}
+.user-form .container .left-text{
+	text-align: left;
+	font-family: "pre";
+	font-size: 18px;
+	
+}
+.user-form .container h3{
+	font-size: 25px;
+	font-family: "vitro1";
+	color: #686459;
+}
+
+.user-form li::marker{
+	color: #686459;
+}
+
+.user-form .container p{
+	font-size: 16px;
+	font-family: "Pre";
+	color: #000;
+	text-align: left;
+	margin-bottom: 40px;
+}
+.user-form .info p{
+	text-align: left;
+	font-family: "KOH1";
+	font-size: 20px;
+	color: #b8b8b8;
+	line-height: 40px;
+}
+
+#price{
+	display: inline-block;
+	margin-left: 8%;
+	color: #686459;
+}
+.user-form .container .price p{
+	font-family: "KOH1";
+	display: inline-block;
+	font-size: 30px;
+}
+.user-form .price p span{
+	color: #000 !important;
+	font: 20px;
+}
+.user-form .container p span{
+	font-size: 24px;
+	color: red;
+}
+.user_num{
+	width: 45%;
+	display: inline-block;
+	margin-left: 3%;
+}
+.user_name{
+	width: 45%;
+	display: inline-block;
+}
+#user_name{
+	background-color: #fdfaf4;
+	height: 84px;
+	display: inline-block;
+	width: 100%;
+	
+}
+#notice{
+	margin-bottom: 35px;
+}
+.user-form label{
+	display: block;
+	font-size: 18px;
+	font-family: "KOH1";
+	margin-bottom: 20px;
+}
+.user-form label span{
+	font-size: 30px;
+	color: red;
+
+}
+
+#user_num{
+	width: 100%;
+	height: 84px;
+	background-color: #fdfaf4;
+	margin-bottom: 40px;
+}
+.user-form input{
+	border: 2px solid #686459;
+	width: 100%;
+	height: 40px;
+	background-color: #fdfaf4;
+}
+#user_info{
+	width: 100%;
+
+}
+#user_info::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.user-form .container h4{
+	font-size: 30px;
+	font-family: "KOH1";
+	margin-bottom: 30px;
+}
+
+.user-form .container .notice{
+height: 440px;
+background-color: #fdfaf4;
+padding: 25px;
+border: 1px solid #686459;
+margin-bottom: 15px;
+}
+.user-form .container .notice p{
+	text-align:center;
+}
+.info{
+	margin-bottom: 110px;
+}
+.info-check .container h3{
+	font-size: 40px;
+	font-family: "vitro1";
+	color: #686459;
+	margin-bottom: 40px;
+}
+.info-check .reserinfo{
+	width: 100%;
+	height: 440px;
+	background-color: #fdfaf4;
+	padding: 2% 0 0 5%;
+	margin-bottom: 15px;
+	border: 1px solid #686459;
+}
+
+
+
+.info-check .reserinfo ul li{
+	list-style-type: disc;
+	color: #686459;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.info-check .reserinfo ul li span{
+	font-size: 30px;
+	font-family: "KOH1";
+	color: #000;
+}
+
+.info-check .total{
+	width: 100%;
+	height: 115px;
+	background-color: #fdfaf4;
+	padding: 2% 0 0 5%;
+	margin-bottom: 24px;
+	border: 1px solid #686459;
+}
+
+.info-check .total p{
+	font-size:30px;
+	font-family: "KOH1";
+}
+.info-check .container{
+	margin-bottom: 55px;
+}
+.info-check .total p span{
+	font-size: 20px;
+	font-family: "KOH1";
+}
+.info-check .checkbox .sizer{
+	width: 15px;
+	height: 15px;
+	margin-right: 8px;
+}
+.info-check .checkbox p{
+display: inline-block;
+font-size: 20px;
+font-family: "Pre";
+font-weight: 600;
+}
+.info-check .checkbox p a{
+font-size: 20px;
+font-family: "Pre";
+font-weight: 600;
+color: #000;
+}
+.info-check .checkbox{
+	padding-left: 4%;
+}
+.submit{
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.submit form{
+	margin-bottom: 35px;
+}
+.submit label a{
+	text-decoration: none !important;
+	font-family: "pre";
+	font-size: 20px;
+}
+.cancel-btn{
+border:1px solid #686459;
+display: inline-block;
+width: 380px;
+height: 65px;
+font-family: "KOH1";
+}
+.submit input{
+border:1px solid #686459;
+display: inline-block;
+width: 380px;
+height: 65px;
+font-family: "KOH1";
+background-color: #fff;
+cursor: pointer;
+color: #686459;
+}
+.cancel-btn{
+	margin-right: 1%;
+}
+.submit-btn{
+	text-align: center;
+	font-size: 18px;
+	line-height: 65px;
+	width: 250px;
+	height: 65px;
+	margin: 0 auto;
+	border: 1px solid #686459;
+	font-family: 'vitro3';
+}
+.cancel-btn a, .submit-btn a{
+	font-size: 26px;
+	font-family: "KOH1";
+	line-height: 65px;
+	width: 100%;
+	height: 100%;
+	color: #686459;
+	
+}
+.submit
+/* slect버튼설정 */
+
+select {
+	-webkit-appearance: none;  /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	background: url(../images/reservation/selbtn.png) no-repeat 95% 50%;  /* 화살표 모양의 이미지 */ 
+	width: 100%; /* 원하는 너비설정 */
+	padding: 0.5em 0.5em; /* 여백으로 높이 설정 */
+	font-family: inherit;  /* 폰트 상속 */
+	border: 1px solid #999; 
+	border-radius: 0px; /* iOS 둥근모서리 제거 */
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	margin-bottom: 5px;
+	height:45px;
+  }
+  select::-ms-expand { 
+	display: none;
+  }
+input{
+	font-size: 25px;
+}
+
+@media (max-width: 1500px) {
+.container{
+	padding: 0 100px 0 100px;
+}
+
+.wrap-right{
+	float:left;
+	margin-left: 50px;
+}
+}
+@media (max-width: 1450px){_num
+.wrap-left{
+	width: 45%;
+	margin-right: 50px;
+}
+.wrap-right{
+	width: 45%;
+	margin-left: 50px;
+}
+}
+
+@media (max-width: 1200px){
+	.textbox h1{
+		font-size: 45px;
+	}
+	.textbox p{
+		font-size: 35px;
+	}
+	.left-text{
+		font-size: 17px !important;
+		text-align: center !important;
+	}
+	.user-form .container h3{
+		font-size: 30px;
+	}
+	.user-form .container p{
+		font-size: 19px;
+	}
+	.user-form .container p span{
+		font-size: 17px;
+	}
+	.user-form label{
+		font-size: 23px;
+	}
+	.user-form label span{
+		font-size: 23px;
+	}
+	#user_name,#user_num{
+		height: 45px;
+	}
+	.user-form .container h1{
+		font-size: 30px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px){
+	.gnb li{
+		height: 75px;
+		line-height: 75px;
+	}
+	.textbox h1{
+		font-size: 40px;
+		margin-bottom: 0;
+		word-break: keep-all;
+	}
+	.main-wrap{
+		height: 40vh;
+		background-image: url(../images/check/m/main.jpg);
+		background-repeat: no-repeat;
+	}
+	.main-wrap #logo {
+		background-image: url(/images/common/m/logo.png);
+		background-repeat: no-repeat;
+			}
+	.textbox p{
+		font-size: 28px;
+	}
+	.gnb li a{
+		font-size: 16px;
+	}
+	.user-form .container p{
+		text-align: right;
+		font-size: 14px;
+	}
+	.textbox h1{
+		font-size: 30px;
+	}
+	.textbox p{
+		font-size: 30px;
+	}
+	.user_name{
+		width: 94%;
+		margin-bottom: 25px;
+		margin: 0 auto;
+		padding: 0;
+		margin-left: 6px;
+	}
+	.user_num{
+		width: 94%;
+		margin-left: 0;
+		margin: 0 auto;
+		padding: 0;
+		margin-left: 6px;
+	}
+	#user_info{
+		display: block;
+	}
+	.user-form .container h3{
+		font-size: 25px;
+	}
+	.user-form label{
+		font-size: 19px;
+	}
+	.submit-btn{
+		width: 150px;
+		height: 45px;
+		
+	}
+	.submit-btn {
+		font-size: 22px;
+		line-height: 45px;
+	}
+	.container{
+		padding: 0 2% 0 2%;
+	}
+	.submit input{
+		width: 150px;
+		font-size: 25px;
+		height: 45px;
+		
+	}
+	.submit{
+		margin-top: 0;
+		margin-bottom: 12%;
+	}
+	.user-form .container .left-text{
+		margin-bottom: 50px;
+	}
+	
+}
+
+@media (max-width: 500px){
+	.gnbwrap{
+		margin-bottom: 12%;
+	}
+	.textbox p{
+		font-size: 20px;
+	}
+	.user-form .container p{
+		font-size: 12px;
+	}
+}
+@media (max-width: 400px){
+	.main-wrap{
+		background-image: url(../images/check/500/main.jpg);
+		background-repeat: no-repeat;
+	}
+}
+
+

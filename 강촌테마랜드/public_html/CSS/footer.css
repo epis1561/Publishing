@@ -1,0 +1,133 @@
+@charset "utf-8";
+@font-face {
+	src: url("../CSS/font/VITRO\ CORE\ OTF.OTF");
+	font-family: "vitro1";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ INSPIRE\ OTF.OTF");
+	font-family: "vitro2";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ PRIDE\ OTF.OTF");
+	font-family: "vitro3";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeumOTF.otf");
+	font-family: "KOH1";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeum.ttf");
+	font-family: "KOH2";
+}
+
+@font-face {
+	src: url("../CSS/font/PretendardVariable.ttf");
+	font-family: "Pre";
+}
+p{margin: 0;padding: 0;}
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    position: relative;
+}
+.footer{
+    background-color: #686459;
+    height: 300px;
+display: block;
+
+}
+.logo1{
+    margin-right: 110px;
+}
+.logo1 img{
+    vertical-align:super;
+}
+.footer-wrap h2,p{
+    font-family: "vitro3" !important;
+    color: #fff;
+}
+.footer-wrap h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.text-wrap p{
+    display: inline-block;
+}
+.text-wrap p:last-child{
+    display: block;
+}
+.footer-wrap p{
+    margin-bottom: 25px;
+    font-size: 16px !important;
+    font-weight: normal;
+}
+.footer-wrap p > a{
+    color: #fff !important;
+    font-size: 16px !important;
+}
+
+@media(max-width: 1200px){
+   .footer-wrap  .logo1 img{
+        width: auto;
+        height: auto;
+    }
+    .footer{
+        height: 460px;
+    }
+    .footer-wrap{
+        display: block;
+        text-align: center;
+    padding-top: 10%;
+    margin: 0 auto;
+   
+    }
+    .footer-wrap p{
+        display: block;
+    }
+    .logo1{
+        margin: 0;
+        margin-bottom: 35px;
+    }
+  
+}
+@media(max-width: 768px){
+    .logo1{
+        margin-bottom: 25px;
+    }
+    .footer-wrap{
+        padding-top: 7%;
+    }
+    .footer{
+        height: 350px;
+    }
+    .footer-wrap h2{
+        font-size: 20px;
+    }
+    .footer-wrap p{
+        font-size: 14px !important;
+        font-weight: normal;
+        word-break: keep-all;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width: 500px){
+.footer-wrap h2{
+
+    font-size: 18px;
+    word-break: break-all;
+}
+}
+
+@media(max-width: 300px){
+#Leisure-wrap .contents-wrap li{
+    width: 32.5%;
+}
+
+}

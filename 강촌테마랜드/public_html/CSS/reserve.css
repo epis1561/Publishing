@@ -1,0 +1,1453 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+	src: url("../CSS/font/VITRO\ CORE\ OTF.OTF");
+	font-family: "vitro1";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ INSPIRE\ OTF.OTF");
+	font-family: "vitro2";
+}
+
+@font-face {
+	src: url("../CSS/font/VITRO\ PRIDE\ OTF.OTF");
+	font-family: "vitro3";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeumOTF.otf");
+	font-family: "KOH1";
+}
+
+@font-face {
+	src: url("../CSS/font/KOHIBaeum.ttf");
+	font-family: "KOH2";
+}
+
+@font-face {
+	src: url("../CSS/font/PretendardVariable.ttf");
+	font-family: "Pre";
+}
+
+/* default 셋팅 */
+.info .left-text{
+	color: #978d6e !important;
+	font-size: 30px !important;
+	font-family: "vitro1" !important;
+}
+*{
+	font-size: 10px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	object-fit: cover;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.notice22{
+	font-family: "vitro3";
+	font-size: 14px;
+	line-height: 24px;
+	word-break: keep-all;
+}
+.reser-menu .text-box ul{
+	margin-bottom: 2%;
+}
+.reser-menu .text-box p{
+	text-decoration: underline;
+}
+.main-wrap{
+    height: 62vh;
+    background-image: url(../images/reservation/01_01.jpg);
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-wrap .logo {
+    width: 225px;
+    height: 80px;
+	position: absolute;
+	top: 6%;
+	left: 5%;
+    background-image: url(/images/common/logo.png);
+    background-repeat: no-repeat;
+}
+#logo{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.textbox{
+    text-align: center;
+    margin: 0 auto;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox h1{
+    font-family: "vitro1";
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.textbox p{
+    font-family: "vitro3";
+    color: #fff;
+    font-size: 28px;
+}
+.menubtn{
+    position: absolute;
+    font-size: 30px;
+	position: absolute;
+	right: 3%;
+	top: 4%;
+}
+.gnbwrap{
+    border-bottom: 1px solid #c2c2c2;
+    margin-bottom: 55px;
+}
+.gnb{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.gnb li{
+    line-height: 95px;
+    height: 95px;
+    display: inline-block;
+    margin-left: 75px;
+}
+.gnb li:first-child{
+    margin-left: 0;
+}
+.gnb li a{
+    font-family: "vitro3";
+    color: #686459;
+    font-size: 18px;
+}
+
+
+.first_con{
+	margin-bottom: 20px;
+}
+.container {
+	padding: 0 400px 0 400px;
+	height: 100%;
+	margin-bottom: 40px;
+}
+
+.container::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.reser-menu .text-box h1 {
+	color: #978d6e;
+	font-size: 30px;
+	font-family: "vitro1";
+	margin-bottom: 20px;
+}
+
+.reser-menu .text-box h1 span {
+	font-size: 30px;
+}
+
+.reser-menu .text-box p {
+	color: #000;
+	font-family: "vitro3";
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.text-box {
+	margin-bottom: 60px;
+}
+
+/* .resbtn ul ul li a{
+	color: #686459;
+	font-size: 16px;
+}
+.resbtn ul ul li{
+	background-color: #fff;
+	border: 1px solid #686459;
+	border-right: 2px solid #686459;
+	border-left: 2px solid #686459;
+	
+}
+
+.resbtn ul ul li:last-child{
+	border-bottom: 2px solid #686459;
+}
+
+.resbtn ul ul li:hover{
+	transform: scale(1.05);
+	transition-duration: 0.5s;
+}
+
+/* 드롭다운 설정  */
+/* .resbtn > ul >li >ul{
+	width: 400px;
+	height: 0;
+	opacity:0;
+	position: absolute;
+} 
+.resbtn >ul >.resbtn1:hover ul{
+	opacity:100;
+	transition:2s;
+}
+.resbtn >ul >.resbtn2:hover ul{
+	opacity:100;
+	transition:2s;
+} */ 
+/* 달력css */
+.calendar{background-color: #fafafa;
+	width: 100%;
+	height: max-content;
+	}
+.dateHead div {
+	background: #fafafa;
+	color: #000;
+	text-align: center;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+
+}
+.dateHead div:hover{
+	cursor: default;
+	background-color: #e2e2e2;
+}
+.prevDay p{
+	font-size: 15px;
+	font-family: "Pre";
+}
+.nextDay p{
+	font-size: 15px;
+	font-family: "Pre";
+}
+.prevDay:hover p{
+	cursor: pointer;
+}
+.dateBoard div{
+	position: relative;
+}
+.dateBoard div:hover::after{
+	content: '';
+	display:block;
+	height: 2px;
+	width: 12px;
+	background-color: #aab1a4;
+	position: absolute;
+	top: 65%;left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.nextDay:hover p{
+	cursor: pointer;
+	
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+.noColor{
+	background-color: #fafafa !important;
+	visibility: hidden;
+}
+.noColor:hover{
+	cursor:auto;
+}
+.grid div {
+	padding: 8% 0.6rem 8% 0.6rem;
+	font-size: 12px;
+	cursor: pointer;
+	font-weight: 600;
+	text-align: center;
+}
+.grid #sun{
+    color: red;
+}
+.grid #sat{
+    color: #ddbf67;
+}
+.dateBoard div {
+	color: #222;
+	height: auto;
+	font-weight: bold;
+	padding: .6rem .8rem;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+
+}
+.dateBoard div:hover{
+	background-color: #eee;
+
+}
+.dateBoard div:
+.calendar {width: 100%;
+height: 460px;}
+.calendar .dateBoard div:nth-child(7n+1){color:red;}
+.calendar .dateBoard div:nth-child(7n){color:orange;}
+.calendar .dateBoard div:nth-child(7n+1):hover{}
+.calendar .dateBoard div:nth-child(7n):hover{}
+.calendar-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	height: 50px;
+	align-items: center;
+}
+.dateHead{
+	margin: 0;
+
+} 
+.dateHead>div{
+	font-size: 16px;
+}
+/* 좌우 버튼 
+.btn {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #000;
+	border-width: 3px 3px 0 0;
+	cursor: pointer;
+}*/
+
+
+.dateTitle{
+	font-size: 16px;
+}
+.btn{
+	font-size: 14px;
+}
+
+
+
+.dateHead {
+	margin: .4rem 0;
+}
+
+.wrap-left{
+	float:left;
+	width: 70%;
+	border: 1px solid #000;
+}
+
+.wrap-right{
+	width: 20%;
+	height: 100%;
+	float:left;
+	padding: 4px;
+	margin-left: 7%;
+}
+
+.wrap-right h2{
+	margin-bottom: 0;
+}
+.wrap-right p{
+	margin-bottom: 10px;
+	color: #000;
+}
+.wrap-right p{
+	font-family: "KOH1";
+	font-size: 18px;
+}
+
+.wrap-right label{
+	font-family: "KOH1";
+	margin-bottom: 10px;
+	font-size: 18px;
+	display: block;
+}
+.arrival{
+	width: 100%;
+}
+.arrival2{
+	width: 100%;
+}
+.wrap-right .arrival #arrival{
+	width: 102%;
+	height: 25px;
+	margin: 0 0 45px 0;
+}
+.wrap-right .arrival #arrival2{
+	width: 100%;
+	height: 44px;
+	margin:14px 0 42px 0;
+}
+.arrival input{
+	border: 1px solid #686459;
+	padding: .45rem .9rem;
+	height: 25px;
+	text-align: center;
+	width: 85%;
+}
+
+.addbar{
+	position: relative;
+	display: flex;
+	text-align: center;
+	/*justify-content: space-evenly;
+	height: 64px;
+	line-height: 64px;
+	margin-bottom: 42px;*/
+	width: 100%;
+}
+.addbar form{
+	width: 20%;
+}
+.addbar form input{
+	background-color: #fff;
+	color: #686459;
+}
+.addbar form:hover input {
+	color: #fff;
+	background-color: #686459;
+	cursor: pointer;
+}
+.addbar p{
+width: 60%;
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+margin: 0;
+}
+.addbar .minus{
+	width: 100%;
+	height: 100%;
+	
+}
+.addbar .plus{
+	width: 100%;
+	height: 100%;
+	
+}
+/* 
+타임테이블 작성 */
+/* .tg  {border-collapse:collapse;border-spacing:0;display: inline-block;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ohg3{border-right: 1px solid #686459; text-align:center;vertical-align:top; font-family: "KOH1";}
+.tg .tg-03p3{border: 1px solid #686459; color:#000000;text-align:center;vertical-align:top; font-family: "KOH1";}
+.tg .tg-jct2{border-right: 1px solid #686459; color:#cb0000;text-align:center;vertical-align:top; font-family: "KOH1";}
+.tg .tg-jkbe{border: 1px solid #686459;  background-color:#978d6e;color:#fff;font-family:"KOH1", sans-serif !important;font-size:16px;text-align:center;vertical-align:top}
+.tg .tg-b2du{border-right: 1px solid #686459;  color:#9b9b9b;text-align:center;vertical-align:top}
+tbody{border: 1px solid #686459;}
+
+.timetable{
+	text-align: center;
+}
+.timetable h3{
+	font-family: "KOH1";
+	font-size: 30px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.timetable h3::after{
+content: '';
+display: block;
+	width: 80%;
+	height: 4px;
+	background-color: #978d6e;
+	margin: 0 auto;
+}
+.table-wrap{
+	border: 1px solid #000;
+	position: relative;
+	background-color: #fff;
+}
+
+.timetable .table-wrap .btn1{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-color: #fff;
+	line-height: 50px;
+	position: absolute; top: 0; right: 0;
+}
+.timetable .table-wrap .table{
+	margin: 0 2% 30px 2%;
+}
+.timetable .table-wrap .table table{
+	width: 19%;
+}
+.timetable .btn1 i{
+	line-height: 50px;
+	font-size: 20px;
+	font-weight:lighter;
+}
+.timetable .btn1:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color: #978d6e;
+} */ 
+
+/* 테이블 위치설정 position
+.resbtn{
+	position: relative;
+}
+.timetable{
+	max-width: 1000px;
+	position: absolute;
+	top: 100%; left:-100%;
+}
+.timetable::after{
+
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+
+/* 타임테이블 끝 */
+
+.tg  {border-collapse:collapse;border-spacing:0; width: 80%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-mxrt{color:#fe0000;font-weight:bold;text-align:center;vertical-align:top}
+.searchbtn{
+	background-color: #686459;
+	height: 65px;
+	font-family: "KOH1";
+	font-size: 26px;
+	text-align: center;
+}
+.searchbtn a{
+	color: #fff;
+	line-height: 65px;
+}
+
+
+/* 숙박 예약 안내  */
+.room{
+	background-color: #fdfaf4;
+	height: 100%;
+	padding-bottom: 105px;
+}
+.room h1{
+	font-size: 30px;
+	font-family: "vitro1";
+	color: #686459;
+	padding-top: 80px;
+	margin-bottom: 35px;
+}
+.room .container{
+	margin-bottom: 0;
+}
+.room1{
+	text-align: center;
+	margin-bottom: 120px;
+	width: 100%;
+	flex-wrap:nowrap;
+
+}
+.roomAll{
+	width: 100%;
+}
+.room-wrap{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	margin: 0 1%;
+}
+.room-wrap img{
+	margin-bottom: 25px;
+	border-radius: 10px;
+	width: 100%;
+}
+.room-wrap h3{
+	font-size: 22px;
+	margin-bottom: 5px;
+	font-weight: 600;
+	font-family: 'vitro1';
+}
+.room-wrap p{
+	font-size: 15px;
+	font-family: "vitro3";
+	font-weight: 600;
+	color: #000;
+}
+.room-wrap:hover img{
+	transform: scale(1.03);
+	transition-duration: 0.5s;
+}
+
+
+.roomAll{
+	margin-bottom: 60px;
+}
+.roombtn{
+	text-align: center;
+	
+}
+.roombtn a{
+display: inline-block;
+width: 200px;
+height: 45px;
+font-size: 18px;
+line-height: 45px;
+background-color: #686459;
+color: #fff;
+font-family: "KOH1";
+}
+.roombtn p{
+	margin-bottom: 22px;
+	color: #000;
+}
+.roombtn a:hover{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+}
+/* 숙박 예약 안내 끝 */
+.user-form{
+	margin-bottom: 1px;
+}
+.user-form .container{
+	margin-bottom: 0;
+}
+.userinfo h3{
+	margin-bottom: 15px;
+	font-size: 25px;
+	font-family: "vitro1";
+	color: #686459;
+}
+.user-form ul{
+	padding: 2% 0 2% 4%;
+	display: inline-block;
+}
+.user-form li{
+	list-style:disc;
+	font-size: 18px;
+	font-family: "KOH1";
+	margin-bottom: 30px;
+}
+/* .user-form li span{
+	font-size: 30px;
+	color: #686459;
+	margin-left: 8%;
+} */
+.user-form li::marker{
+	color: #686459;
+}
+.detail{
+	display: inline-block;
+	width: 65%;
+}
+.user-form .detail ul{
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+}
+.user-form .detail li{
+	list-style: none;
+	color: #686459;
+	margin-left: 8%;
+}
+.user-form .container p{
+	font-size: 24px;
+	font-family: "Pre";
+	color: #000;
+	text-align: right;
+	margin-bottom: 20px;
+}
+.user-form .info p{
+	text-align: left;
+	font-family: "vitro3";
+	font-size: 18px;
+	color: #b8b8b8;
+}
+.user-form .price{
+	height: 90px;
+	background-color: #fdfaf4;
+	padding: 25px;
+	border: 1px solid #686459;
+	font-size: 30px;
+	font-family: "KOH1";
+	color: #686459;
+	padding: 3% 0 0 5.8%;
+	margin-bottom: 40px;
+}
+#price{
+	display: inline-block;
+	margin-left: 8%;
+	color: #686459;
+}
+.user-form .container .price p{
+	font-family: "KOH1";
+	display: inline-block;
+	font-size: 18px;
+}
+.user-form .price p span{
+	color: #000 !important;
+	font: 20px;
+}
+.user-form .container p span{
+	font-size: 24px;
+	color: red;
+}
+.user_num{
+	width: 37%;
+	display: inline-block;
+	margin-left: 1%;
+}
+.user_name{
+	width: 30%;
+	display: inline-block;
+	margin-right: 1%;
+}
+#user_name{
+	background-color: #fdfaf4;
+	height: 40px;
+	display: inline-block;
+	width: 100%;
+}
+#notice{
+	margin-bottom: 20px;
+	font-size: 25px;
+	font-family: "KOH1";
+	color: #686459;
+}
+.userinfo label{
+	display: block;
+	font-size: 18px;
+	font-family: "KOH1";
+	margin-bottom: 10px;
+}
+.userinfo label span{
+	font-size: 18px;
+	color: red;
+
+}
+
+#strTelList{
+	width: 100%;
+	height: 40px;
+	background-color: #fdfaf4;
+	margin-bottom: 40px;
+}
+.user-form input{
+	border: 1px solid #686459;
+	width: 100%;
+	height: 84px;
+	background-color: #fdfaf4;
+}
+#user_info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+#user_info::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.user-form .container h4{
+	font-size: 25px;
+	font-family: "KOH1";
+	margin-bottom: 15px;
+}
+
+.user-form .container .notice{
+height: 320px;
+background-color: #fdfaf4;
+padding: 25px;
+border: 1px solid #686459;
+margin-bottom: 20px;
+}
+.user-form .container .notice p{
+	text-align:center;
+}
+.info{
+	margin-bottom: 110px;
+}
+.info-check .container h3{
+	font-size: 40px;
+	font-family: "vitro1";
+	color: #686459;
+	margin-bottom: 40px;
+}
+.info-check .reserinfo{
+	width: 100%;
+	height: 440px;
+	background-color: #fdfaf4;
+	padding: 2% 0 0 5%;
+	margin-bottom: 15px;
+	border: 1px solid #686459;
+}
+
+
+
+.info-check .reserinfo ul li{
+	list-style-type: disc;
+	color: #686459;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.info-check .reserinfo ul li span{
+	font-size: 30px;
+	font-family: "KOH1";
+	color: #000;
+}
+
+.info-check .total{
+	width: 100%;
+	height: 115px;
+	background-color: #fdfaf4;
+	padding: 2% 0 0 5%;
+	margin-bottom: 24px;
+	border: 1px solid #686459;
+}
+
+.info-check .total p{
+	font-size:30px;
+	font-family: "KOH1";
+}
+.info-check .container{
+	margin-bottom: 55px;
+}
+.info-check .total p span{
+	font-size: 20px;
+	font-family: "KOH1";
+}
+.info-check .checkbox .sizer{
+	width: 15px;
+	height: 15px;
+	margin-right: 8px;
+}
+.info-check .checkbox p{
+display: inline-block;
+font-size: 20px;
+font-family: "Pre";
+font-weight: 600;
+}
+.info-check .checkbox p a{
+font-size: 20px;
+font-family: "Pre";
+font-weight: 600;
+color: #000;
+}
+.info-check .checkbox{
+	padding-left: 4%;
+}
+.submit{
+	text-align: center;
+	margin-bottom: 90px;
+}
+.submit form{
+	margin-bottom: 35px;
+}
+.submit label a{
+	text-decoration: none !important;
+	font-family: "pre";
+	font-size: 20px;
+}
+.cancel-btn, .submit-btn{
+border:1px solid #686459;
+display: inline-block;
+width: 380px;
+height: 65px;
+font-size: 20px;
+	font-family: "KOH1";
+	line-height: 65px;
+	color: #686459;
+}
+
+.cancel-btn{
+	margin-right: 1%;
+}
+.submit-btn{
+	margin-left: 1%;
+}
+.check{
+	margin-bottom: 15px;
+}
+
+/* slect버튼설정 */
+
+select {
+	-webkit-appearance: none;  /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	background: url(../images/reservation/selbtn.png) no-repeat 95% 50%;  /* 화살표 모양의 이미지 */ 
+	width: 110%; /* 원하는 너비설정 */
+	padding: 0.5em 0.5em; /* 여백으로 높이 설정 */
+	font-family: inherit;  /* 폰트 상속 */
+	border: 1px solid #686459; 
+	border-radius: 0px; /* iOS 둥근모서리 제거 */
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	margin-bottom: 5px;
+	height:45px;
+	font-size: 13px;
+  }
+  select::-ms-expand { 
+	display: none;
+  }
+
+  select option{
+	font-size: 15px;
+  }
+input{
+	font-size: 16px;
+}
+
+.roombtn p{
+	font-family:"vitro3";
+	font-size:18px;
+	font-weight:600;
+}
+
+/*Touchspin*/
+.input-group {
+    position: relative;
+    display: flex;
+    border-collapse: separate;
+	margin: 0 0 45px 0;
+}
+
+.input-group-btn {
+    position: relative;
+    white-space: nowrap;
+}
+
+.input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+	display: table-cell;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.input-group-btn:first-child>.btn {
+    margin-right: -1px;
+	height: 36px;
+}
+
+.input-group-btn:first-child>.btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group-btn:last-child>.btn {
+    margin-left: -1px;
+	height: 36px;
+}
+
+.input-group-btn:last-child>.btn {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.input-group-btn>.btn {
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #686459;
+    user-select: none;
+}
+
+.datepicker td,.datepicker th{text-align:center;width:1000px !important;height:45px !important;font-size:15px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;border:none}
+@media (max-width: 1500px) {
+.container{
+	padding: 0 100px 0 100px;
+}
+
+.wrap-right{
+	float:left;
+	margin-left: 50px;
+}
+}
+@media (max-width: 1450px){
+.wrap-left{
+	width: 45%;
+	margin-right: 50px;
+}
+.wrap-right{
+	width: 45%;
+	margin-left: 50px;
+}
+.container #choose p{
+	font-size: 2.5rem;
+}
+.container #choose .choose-left p span{
+	font-size: 1.8rem;
+}
+
+
+.choose-wrap{
+	justify-content: flex-start;
+}
+.container #choose .choose-left{
+	margin-right: 100px;
+}
+}
+
+@media (max-width: 1400px){
+	
+}
+
+
+
+
+@media (max-width: 1250px){
+	.arrival input{
+		width: 47%;
+	}
+	.wrap-left{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.wrap-right{
+		width: 80%;
+		margin-left: 0;
+	}
+	.resbtn ul{
+		width: 100%;
+	}
+	.addbar{
+
+		margin-bottom: 25px;
+	}
+	.resbtn ul select{
+		width: 56%;
+	}
+	.timetable{
+		left: 0%;
+	}
+	.wrap-right .arrival #arrival{
+		margin-bottom: 25px;
+		width: 53%;
+	}
+	.wrap-right .arrival #arrival2{
+		margin-bottom: 25px;
+		width: 50%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.user_name{
+		margin-right: 2%;
+		width: 33%;
+	}
+	.user_num{
+		margin-bottom: 40px;
+		width: 63%;
+	}
+	.reserve-view li{
+		line-height: 300%;
+		height: 60%;
+	}
+	.reserve-view li h3{
+		font-size: 17px;
+	}
+	.reserve-view li h3 span{
+		font-size: 20px;
+	}
+
+	.resbtn{
+		margin-bottom: 25px;
+	}
+
+	.reser-menu .text-box h1{
+		font-size: 30px;
+	}
+	.reser-menu .text-box p{
+		font-size: 20px;
+	}
+	.resbtn p{
+		font-size: 17px;
+	}
+	.wrap-right p{
+		font-size: 20px;
+		color: #000;
+	}
+	.wrap-right label{
+		font-size: 20px;
+	}
+	.addbar{
+		height: 50px;
+		line-height: 50px;
+	}
+	.addbar .plus i{
+		line-height: 50px;
+	}
+	.addbar .minus i{
+		line-height: 50px;
+	}
+	.room-wrap{
+		width: 45%;
+		margin-bottom: 25px;
+	}
+	.textbox h1{
+		font-size: 45px;
+	}
+	.textbox p{
+		font-size: 30px;
+	}
+	.user-form .container h3{
+		font-size: 30px;
+	}
+	.user-form .container p{
+		font-size: 19px;
+	}
+	.user-form .container p span{
+		font-size: 17px;
+	}
+	.user-form label{
+		font-size: 23px;
+	}
+	.user-form label span{
+		font-size: 23px;
+	}
+	#user_name,#strTelList{
+		height: 45px;
+		margin: 0;
+		padding: 0;
+	}
+	.user-form li{
+		font-size: 22px;
+	}
+	.user-form .detail li{
+		margin-left: 3%;
+	}
+	.user-form .container .price p{
+		font-size: 22px;
+	}
+	#price{
+		margin-left: 5%;
+	}
+	.user-form .price{
+		height: 80px;
+	}
+	.user-form .container h4{
+		font-size: 23px;
+	}
+	.left-text{
+		font-size: 17px !important;
+	}
+	.cancel-btn, .submit-btn{
+		width: 250px;
+		font-size: 22px;
+	}
+	.room h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	.timetable h3{
+		font-size: 23px;
+	}
+	.timetable h3::after{
+		width: 60%;
+	}
+	.room1{
+		margin-bottom: 60px;
+	}
+.tg ,.tg td,.tg th,.tg .tg-ohg3,.tg .tg-03p3,.tg .tg-jct2,
+.tg .tg-jkbe,
+.tg .tg-b2du{
+font-size: 14px;
+}
+.timetable{
+	width: 80%;
+	position: fixed;top:50%;left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+}
+@media (max-width: 840px){
+	.timetable{
+		width: 95%;
+	}
+}
+
+
+@media (max-width: 768px){
+	#notice{
+		text-align: left;
+	}
+	.room h1{
+		padding-top: 40px;
+	}
+	.submit{
+		margin-bottom: 50px;
+	}
+	.input-group{
+		margin-bottom: 25px;
+	}
+	.gnb li{
+		height: 75px;
+		line-height: 75px;
+	}
+	.user-form .info p{
+		font-size: 25px;
+	}
+	.user-form .price{
+		padding: 0;
+	}
+	.main-wrap{
+		background-image: url(/images/reservation/m/01_01.jpg);
+		background-repeat: no-repeat;
+		height: 250px;
+	}
+	.main-wrap .logo {
+		background-image: url(/images/common/m/logo.png);
+		background-repeat: no-repeat;
+			}
+	.arrival input{
+		width: 90%;
+	}
+	.container{
+		padding: 0 2% 0 2%;
+		margin-bottom: 25px;
+	}
+	.wrap-left{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.wrap-right{
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+	.resbtn ul{
+		width: 100%;
+	}
+	.addbar{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.resbtn ul select{
+		width: 100%;
+	}
+	.addbar form{
+		width: 15%;
+	}
+	.addbar p{
+		width: 70%;
+	}
+	.timetable{
+		left: 50%;
+	}
+	.wrap-right .arrival #arrival{
+		margin-bottom: 25px;
+		width: 100%;
+		height: 35px;
+		padding: 0;
+	}
+	.wrap-right .arrival #arrival2{
+		margin-bottom: 25px;
+		width: 100%;
+		height: 35px;
+	}
+	#user_info{
+		display: block;
+	}
+	.user_name{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.user_num{
+		width: 100%;
+		margin-left: 0;
+	}
+	.reser-menu .text-box h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	.reser-menu .text-box h1 span{
+		font-size: 32px;
+	}
+	.reser-menu .text-box p{
+		font-size: 17px;
+		text-align: center;
+		word-break: keep-all;
+	}
+	.wrap-right label{
+		font-size: 18px;
+	}
+	.wrap-right p{
+		font-size: 18px;
+		line-height: 40px;
+		color: #000;
+		margin: 0;
+	}
+
+	.addbar{
+		width: 100%;
+		height: 40px;
+	}
+	.addbar form input{
+		line-height: 30px;
+	}
+	.resbtn ul select{
+		width: 100%;
+	}
+	.user-form .container h3{
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.user-form .container p{
+		font-size: 16px;
+		text-align: left;
+	}
+	.user-form label{
+		font-size: 19px;
+	}
+	.user-form label span{
+		font-size: 19px;
+	}
+	.user-form li{
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+	.user-form .detail li{
+		word-break:break-all;
+	}
+	.user-form .container .notice{
+		height: 300px;
+	}
+	.user-form .container .price p{
+		font-size: 18px !important;
+	}
+	.user-form .container p span{
+		font-size: 10px;
+	}
+	.user-form .price{
+		height: 75px;
+		padding: 3% 0 0 1%;
+	}
+	.user-form .container h4{
+		font-size: 19px;
+	}
+	.user-form .container p{
+		font-size: 12px !important;
+		margin: 10px;
+	}
+	.room-wrap{
+		width: 95%;
+	}
+	.cancel-btn, .submit-btn{
+		width: 150px;
+		height: 45px;
+		line-height: 45px;
+	}
+	.tg ,.tg td,.tg th,.tg .tg-ohg3,.tg .tg-03p3,.tg .tg-jct2,
+.tg .tg-jkbe,
+.tg .tg-b2du{
+font-size: 10px;
+}
+.textbox h1{
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+}
+
+
+
+@media (max-width: 500px){
+	.user-form .container p{
+		margin-left: 0;
+	}
+	.tg{
+		width: 100%;
+	}
+	.submit{
+		margin-bottom: 15%;
+	}
+	.gnbwrap{
+		margin-bottom: 12%;
+	}
+	.user-form .container .notice{
+		height: 230px;
+	}
+	.user-form li{
+		font-size: 14px;
+	}
+	
+	.arrival input{
+		width: 88%;
+	}
+	.textbox p{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 375px){
+	.arrival input{
+		width: 85%;
+		padding-right: 0;
+	}
+}
+@media (max-width: 499px){
+.main-wrap{
+	background-image: url(/images/reservation/500/01_01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}}
+
+@media (max-width: 300px){
+	.user-form li{
+		font-size: 10px;
+	}
+	.submit-btn{
+		margin: 0;
+		margin-bottom: 30px;
+	}
+}
