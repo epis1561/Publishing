@@ -1,0 +1,292 @@
+.slide__caption:first-child > .slides__caption-headline { display: block !important; }
+
+
+.roomslide { position: relative; }
+.roomslide > .swiper-wrapper { height: unset !important; }
+
+.roomslide_btn { display: flex; position: absolute; left: 10%; bottom: 3%; z-index: 10; flex-direction: row-reverse; align-items: center; gap: 35px; }
+.roomslide > .roomslide_btn > .current > .swiper-pagination { position: unset !important; text-align: center; transition: .3s opacity; transform: translate3d(0,0,0); width: 140px !important; border: 1px solid #fff; padding: 1rem 0; border-radius: 50%; color: #fff; font-family: rucksack, sans-serif; letter-spacing: 3px; }
+.roomslide_typo { position: absolute; z-index: 10; color: #fff; text-shadow: 0 0 3px #929292; text-transform: uppercase; top: 50%; left: 10%; transform: translateY(-50%); }
+.roomslide_typo > span { font-size: 3em; }
+.roomslide_typo > p { font-size: 5em; }
+
+.roomslide > .roomslide_btn > .move { position: unset; display: flex; justify-content: space-between; gap: 4px; }
+.roomslide > .roomslide_btn > .move .room_prev, .roomslide > .roomslide_btn > .move .room_next { cursor: pointer; }
+
+
+.title1{
+    background: linear-gradient(to right, rgba(255,255,255,0)50%,#a7bbd1 50% );
+    background-size: 200%;
+    transition:2s;
+    background-position: -100% 0;
+}
+
+@media (max-width: 1200px) {
+    .roomslide_btn { left: 50%; transform: translateX(-50%); }
+    .roomslide > .roomslide_btn > .move .room_prev img , .roomslide > .roomslide_btn > .move .room_next img {
+        width: 70px;
+    }
+    .roomslide > .roomslide_btn > .current > .swiper-pagination {
+        width: 100px !important; padding: 0.5rem 0;
+    }
+    .roomslide_typo > span { font-size: 1.5em; }
+    .roomslide_typo > p { font-size: 2em; }
+}
+
+.r_section02 { width: 100vw; height: 100%; max-height: 979px; background: url('/images/common/bg02.jpg'); overflow: hidden;}
+.r_section02 > .title { width: 100%; text-align: center; color: #393d3c; padding: 4% 0 2.5% 0; margin-top: 3%; }
+.r_section02 > .title h1 { text-transform: uppercase; font-size: 1.7em; letter-spacing: 1.5px; }
+
+@media (max-width: 1200px) {
+    .r_section02 > .title { width: 100%; text-align: center; color: #393d3c; padding: 0 0 2.5% 0; }
+}
+@media (max-width: 900px) {
+    .r_section02 { width: 100%; height: unset; max-height: unset; padding-top: 8%; background: url('/images/common/bg02.jpg'); }
+    .r_section02 > .title h1 { text-transform: uppercase; font-size: 1.2em; letter-spacing: 1.5px; }
+}
+@media (max-width: 670px) {
+    .r_section02 { padding: 8% 0 25% 0;}
+}
+@media (max-width: 570px) {
+    .r_section02 { padding: 15% 0 0 0;}
+}
+
+.r_section03 { display: flex; align-items: center; width: 100%; height: 100%; max-height: 979px; overflow: hidden; background: url('/images/room/bg01.jpg') no-repeat center center; background-size: cover;}
+.r_section03 > .left { position: relative; width: 45%; box-sizing: border-box; padding-left: 10%;}
+.r_section03 > .left > .title h1 { color: #393d3c; letter-spacing: 0.02em; font-size: 2em; font-weight: bold; word-break:keep-all; transition: 1s ease-in-out; }
+.r_section03 > .left > .title > h1 .pen { padding: 0.2% 0.5%; background: linear-gradient(to right, rgba(255,255,255,0) 50%, #a7bbd1 50%); background-size: 200%; transition: 2s; }
+.r_section03 > .left > .title > h1 .pen.write { background-position: -100% 0; }
+.r_section03 > .left > .title p { color: #606362; padding: 4% 0; font-weight: 500; line-height: 1.7em; }
+.r_section03 > .right { position: relative; width: 55%;}
+.r_section03 > .right img { width: 100%; }
+.r_section03 > .right ul { display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; }
+.r_section03 > .right ul li { margin: 2%; overflow: hidden; }
+.r_section03 > .right ul li img { transition: all 0.6s; max-width: 100%; }
+.r_section03 > .right ul li:hover img { transform: scale(1.1); }
+.r_section03::after { display: block; content: ''; clear: both;}
+@media (max-width: 1550px) {
+    .r_section03 > .left { position: relative; width: 40%; box-sizing: border-box; padding-left: 5%;}
+    .r_section03 > .right { position: relative; width: 60%; }
+}
+@media (max-width: 1350px) {
+    .r_section03 { flex-wrap: wrap; height: auto; max-width: unset; padding: 12% 0 8% 0; background: url('/images/room/bg02.jpg') repeat center center; background-size: contain; overflow: hidden; }
+    .r_section03 > .left { position: relative; width: 100% !important; box-sizing: border-box; text-align: center; padding-left: 0%; }
+    .r_section03 > .right { position: relative; width: 100% !important; }
+    .r_section03 > .right ul { width: 100%; display: flex; justify-content: center !important; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; }
+    .r_section03 > .right ul li { margin: 2%; overflow: hidden; display: inline-block; width: calc(80%/2); }
+}
+@media (max-width: 900px) {
+    .r_section03 > .left > .title > h1 { text-transform: uppercase; font-size: 1.2em; letter-spacing: 1.5px; }
+    .r_section03 > .left > .title p { color: #606362; padding: 5% 0; font-weight: 500; line-height: 1.4em; font-size: 0.7em; }
+}
+
+.r_section04 { position: relative; }
+.r_section04 > .none900, .r_section04 > .block900 { width: 100%; }
+.r_section04::after { display: block; content: ''; clear: both;}
+.r_section04 > .logo { position: absolute; width: 411px; height: 411px; top: 50%; right: 10%; transform: translateY(-50%); z-index: 10;}
+.r_section04 > .logo img { width: 100%; height: 100%; }
+.r_section04 > .txt { position: absolute; top: 50%; right: 20%; transform: translateY(-50%); z-index: 11; }
+.r_section04 > .txt > p { writing-mode: vertical-lr; font-size: 1.3em; line-height: 1.6em; color: #393d3c; }
+@media (max-width: 900px) {
+    .r_section04 > .logo { position: absolute; width: 220px; height: 220px; top: 50%; right: 0; left: 50%; transform: translate(-50%,-50%); z-index: 10; }
+    .r_section04 > .txt { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 11; }
+    .r_section04 > .txt > p { writing-mode: vertical-lr; font-size: 0.9em; line-height: 1.6em; color: #393d3c; }
+}
+
+/* 떠나요 룸 정보 css */
+#room_daily_price1 { width: 80%; margin: 0 auto; }
+.roomInfo_con01 {
+    display:table-cell;
+    width:60%;
+    vertical-align:top;
+    padding-left: 10%;
+}
+.roomInfo_con02 {
+    display:table-cell;
+    width:40%;
+    vertical-align:top;
+}
+.roomInfo {
+    margin-bottom:30px;
+}
+.roomInfo:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.roomInfo > dt {
+    float:left
+}
+.roomInfo > dt:after {
+    content:"";
+    margin:0 20px;
+    height:35px;
+    line-height:35px;
+    border-right:2px dotted #333;
+    vertical-align:top;
+}
+.roomInfo > dd {
+    text-align: left;
+    float:left;
+    width:calc(100% - 100px);
+}
+.roomInfo_text {
+    color:#343434;
+    font-family: 'Arita-dotum-Medium';
+    line-height: 1.5em;
+}
+.roomInfo_text02 {
+    display:inline-block; 
+    margin-right:30px;
+}
+.roomInfo_text .title {
+    font-size:1em;
+    line-height:1.5em;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:0.5em;
+    
+
+}
+.roomInfo_text .text {
+    font-size:1em;
+    line-height:1.6em;
+}
+.roomInfoWrap {
+    padding: 30px 30px 0 30px;
+    font-size: 15px;
+    max-width: 1200px;
+    margin: 0 auto; width :100%;
+    background-color: rgba(255,255,255,0.7);
+}
+.add_price {
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    text-align: center;
+    background: #fff;
+    font-family: 'Arita-dotum-Medium';
+}
+.add_price tr th {
+    border-bottom: 0.75px solid #929292;
+    padding: 2%;
+    background: #b5c7d5;
+}
+.add_price tr td {
+    padding: 3%;
+}
+.room_ame {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    text-align: center;
+    background: #fff;
+    font-family: 'Arita-dotum-Medium';
+}
+.room_ame tr th {
+    width: 25%;
+    border-right: 0.75px solid #929292;
+    border-bottom: 0.75px solid #929292;
+    background: #b5c7d5;
+}
+.room_ame tr td {
+    padding: 4% 5%;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 1.6em;
+    border-bottom: 0.75px solid #929292;
+}
+.room_ame tr:last-child th, .room_ame tr:last-child td { border-bottom: none; }
+
+@media  (max-width: 1024px) {
+    .roomInfo_con01 { padding-left: 5%; }
+    .roomCon02 #room_daily_price1 {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .roomCon05 .content ul li a {
+        position: relative;
+        display: block;
+        width: 80%;
+        height: 200px;
+        margin: 20px auto;
+        border-radius: 60px;
+        overflow: hidden;
+    }
+    .roomCon05 .content ul li a img:first-child {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    .roomInfoWrap {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #room_daily_price1 {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+    .week_date p {
+        font-size: 0.9em !important;
+    }
+    .roomInfo dt img {
+        width: 25px;
+    }
+    .roomInfo_text02 {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .add_price {
+        width: 90%;
+        border-collapse: collapse;
+        font-size: 0.9em;
+        text-align: center;
+        background: #fff;
+    }
+    .roomInfo_con01 {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .roomInfo_con02 {
+        width: 90%;
+        display: block;
+        margin: 5% auto;
+    }
+    .roomInfo {
+        margin-bottom: 25px;
+        margin-left: 5%;
+    }
+    .roomInfoWrap {
+        padding-top: 30px;
+        font-size: 13px;
+    }
+    .week_date .prv, .week_date .next {
+        width: 25px !important;
+        height: 25px !important;
+        background-size: cover !important;
+    }
+    .week_date .prv {
+        background-position: 1.5px 0px !important;
+    }
+    .week_date .next {
+        background-position: -23px -0px !important;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+    .roomInfo > dd {
+        /*width: calc(100% - 5px);*/
+    }
+}

@@ -1,0 +1,321 @@
+/* 2018-07-02 : 테스트 */
+/* 객실 가격표 */
+
+.room_contents {
+  /* float:left; */
+}
+
+#room_daily_price2:after, .room_contents::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* #room_des {
+	width:40%;
+	float:left;
+} */
+
+#room_daily_price2 {
+  background: #fff;
+  width: 100%;
+}
+
+.room_data li {
+  width: 100%;
+  /* padding: 2% 0; */
+  padding: 0 0 2%;
+}
+
+.room_data::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.room_contents {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.room_rprice {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Arita-dotum-Medium' !important;
+  padding: 0 !important;
+}
+/* .room_rprice table{
+  font-family: 'Arita-dotum-Medium' !important;
+} */
+
+#tblRate {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.room_rprice tr:last-child {
+  border-bottom: 1px solid #999;
+}
+
+/* .room_rprice tr:hover td, .room_rprice tr:hover th {
+	background:red;
+} */
+
+.room_rprice th,
+.room_rprice td
+ {
+  width: 20%;
+  padding: 8px 2px;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.room_rprice th {
+  background: #f9f9f9;
+  border-bottom: 2px solid #333;
+}
+
+.room_rprice td:nth-child(odd) {
+  background: #f9f9f9;
+}
+.room_rprice td:nth-child(even) {
+  background: #fff;
+}
+
+.room_rprice tr:first-child td {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.satur {
+  color: #007bff;
+}
+
+.sun {
+  color: #dc3545;
+}
+
+.soff {
+  color: #6c757d;
+}
+
+.son {
+  color: #17a2b8;
+}
+
+.sale {
+  /* font-family: 'Katibeh', cursive; */
+}
+
+.room_rprice td p { padding:0.2em 0; }
+.room_rprice td p.dc {color:#FF7200;}
+.room_rprice td p.rate { text-decoration:line-through;color:#b3b3b3;}
+.room_rprice td p.sale {color:#000;font-weight:bold;}
+.week_date {
+  background: #e9dfda;
+  border-bottom: 2px solid #333;
+  text-align: center;
+  padding: 15px 2px;
+  border-top: 1px solid #999;
+  font-size:1.1em; letter-spacing:0.05em;
+  font-family: 'Arita-dotum-Medium' !important;
+}
+
+.week_date .prv,
+.week_date .next,
+.week_date #tit {
+  display: inline-block;
+}
+.week_date .prv,
+.week_date .next { font-size:1.5em; vertical-align:middle; margin:0 5px;}
+
+.week_date .prv::before,
+.week_date .next::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+/* .week_date .prv::before {
+  content: '\f137';
+}
+
+.week_date .next::before {
+  content: '\f138';
+} */
+
+.room_limit_table {
+  float: left;
+  /* width:25%;
+	padding-left:10px;
+  padding: 15px 2px; */
+  padding-bottom: 0;
+  padding-left: 10px;
+  line-height: 2;
+}
+
+.room_limit_table table tr:first-child {
+  border-bottom: 1px solid #333;
+  background: #f9f9f9;
+}
+
+.room_limit_table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 5px;
+  border-bottom: 1px solid #999;
+}
+
+.room_limit_table table th,
+.room_limit_table table td {
+  width: 20%;
+  padding: 10px 2px;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  /* font-weight: 400; */
+}
+
+.room_limit_table table th {
+  padding: 14px 2px;
+}
+
+/* .room_limit_table table th {
+	font-size: 1.35em;
+	line-height: 2em;
+	font-weight: 700;
+} */
+
+.room_contents_info::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.room_contents_info {  
+  padding-top: 2%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.room_items {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.room_item_tit {
+  color: #a6825a;
+  display: inline-block;
+  border-bottom: 2px solid #a6825a;
+  padding-bottom: 7px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.room_item_desc, .room_T {
+  line-height: 2;
+  padding-left: 10px;
+}
+
+}
+/* .room_items .room_item_desc p:first-child::before {display:none;} */
+
+/* .room_items .room_item_desc p::before {content:'/'; margin:0 7px;} */
+
+/* .room_items .room_item_desc p {float:left; } */
+
+.room_info_text, .room_info_table {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* .room_info_table {
+  width: 45%;
+  float: left;
+  padding-right: 5%;
+} */
+
+
+@media (max-width: 1024px) {
+  ::-webkit-scrollbar { width:5px; height:3px;}
+  ::-webkit-scrollbar-thumb {background: #a9a9a9;}
+  ::-webkit-scrollbar-track-piece { background:#f1f1f1;}
+  .room_rprice {overflow: unset; padding: 0;}
+
+}
+@media (max-width: 950px) {
+}
+@media (max-width: 768px) {
+  #price {
+    width: 100%;
+  }
+  .priceTable {
+    /* width:100%; */
+    min-width: 700px;
+  }
+  #tblRate {
+    font-size: 0.9em;
+  }
+  .week_date {
+    padding: 7px 2px;
+  }
+  .room_rprice tr:first-child td {
+    padding: 7px 2px;
+    line-height: 1em;
+    font-size: 1em;
+  }
+  .room_rprice th,
+  .room_rprice td {
+    padding: 5px 1px;
+    line-height: 1em;
+    font-size: 0.95em;
+    font-weight: 400;
+  }
+  .room_info_table,
+  .room_info_text {
+    width: 100%;
+    padding: 0;
+  }
+  .room_items,
+  .room_info_table {
+    margin-bottom: 2%;
+  }
+  .room_contents_info {
+    width: 100%;
+  }
+  .room_limit_table {
+    padding-left: 0;
+  }
+  .room_info_text {
+    margin-top: 0;
+  }
+  .room_limit_table {
+    font-size: 0.9em;
+  }
+  .room_item_tit {font-size: 0.9em; padding-bottom: 4px;}
+  .room_item_desc, .room_T {
+    line-height: 1.5em;
+    font-size: 0.8em;
+  } 
+  .room_limit_table table th {
+    padding: 6px 2px;
+  }
+}
+
+@media  (max-width: 560px){}
+
+@media  (max-width: 480px){}
+
+
+@media  (max-width: 380px){}
