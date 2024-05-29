@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<style>
+		.popupBox {position: absolute;/*top: 170px;right: 40px;*/ left: 315px; top:100px; width: 350px;z-index: 10000;} 
+		/* .popupBox {position: absolute; top: 175px; left: 150px; width: 350px; z-index: 10000;} */
+		.popupBox .swiper{width: 100%;}
+		.popupBox .swiper .swiper-slide {
+			height: 350px;
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		.popupBox .swiper .swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;}
+		.popupBox .swiper .swiper-button {display: flex;}
+		.popupBox .swiper .swiper-button li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 1;
+			position: static;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 50px !important;
+			border-top: 1px solid #ffffff;
+			border-right: 1px solid #ffffff;
+			box-sizing: border-box;
+			color: #ffffff;
+			background-color: rgba(0,0,0,0.7);
+			cursor: pointer;
+		}
+		.popupBox .swiper .swiper-button li:last-child {border-right: none;}
+		.popupBox .swiper .swiper-button li img {width: 16px;height: 16px;}
+		.popupBox .swiper .swiper-button .swiper-button-prev,
+		.popupBox .swiper .swiper-button .swiper-button-next {flex: 2;}
+		/* start */
+		.popupBox .swiper .swiper-button .swiper-button-stop,
+		.popupBox .swiper .swiper-button .swiper-button-start {display: none;}
+		.popupBox .swiper .swiper-button .swiper-button-stop.on,
+		.popupBox .swiper .swiper-button .swiper-button-start.on {display: flex;}
+		/* pagination */
+		.popupBox .swiper .swiper-pagination  {position: absolute;top: 50%;left: auto;right: 5px;transform: translateX(-50%);width: max-content;height: max-content;}
+		.popupBox .swiper .swiper-pagination span {display: block;margin: 5px 0;}
+		.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {height: 15px;border-radius: 5px;}
+		.swiper-button-prev:after, .swiper-button-next:after {
+			content: unset;
+		}		
+		@media (max-width: 800px) {
+			.popupBox {right: auto; left: 50%; transform: translateX(-50%);}
+		}
+	</style>
+    <?php
+    if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
+        $sql = "select * from {$g5['new_win_table']}
+                where nw_2 = '1'
+                order by nw_1 asc
+                "; 
+        $result = sql_query($sql, false);
+    ?>
+	<div class="popupBox">
+		<div class="swiper popup-slide">
+			<!-- Additional required wrapper -->
+			<ul class="swiper-wrapper">
+				<!-- Slides -->
+				<?php 
+                for ($i=0; $nw=sql_fetch_array($result); $i++)
+                {
+                    preg_match_all("/<img[^>]*src=[\"']?([^>\"']+)[\"']?[^>]*>/i", $nw['nw_content'], $matches);
+                ?>				
+				<li class="swiper-slide">
+						<img src="<?= $matches[1][0] ?>" alt="">					
+				</li>
+				<?php } ?>
+			</ul>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need navigation buttons -->
+			<ul class="swiper-button">
+				<li class="swiper-button-prev"><img src="http://오롯하다가평.kr/images/popup/arrow_left2.png" alt="이전"></li>
+				<li class="swiper-button-next"><img src="http://오롯하다가평.kr/images/popup/arrow_right2.png" alt="다음"></li>
+				<li class="swiper-button-stop on"><img src="http://오롯하다가평.kr/images/popup/stop.png" alt="정지"></li>
+				<li class="swiper-button-start"><img src="http://오롯하다가평.kr/images/popup/start.png" alt="시작"></li>
+				<li class="swiper-button-close"><img src="http://오롯하다가평.kr/images/popup/close.png" alt="닫기"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<!-- Initialize Swiper -->
+    <script>
+	  var swiper = new Swiper(".popup-slide", {
+        slidesPerView: 1,
+        loop: true,
+		centeredSlides: true,
+        autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+        },
+        pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+	  $(".swiper-button-stop").on("click", function() {
+		  $(this).removeClass("on").next().addClass("on");
+		  swiper.autoplay.stop();
+	  })
+	  $(".swiper-button-start").on("click", function() {
+		  $(this).removeClass("on").prev().addClass("on");
+		  swiper.autoplay.start();
+	  })
+	  $(".swiper-button-close").on("click", function() {
+		$(this).parents(".popupBox").css("display", "none");
+	  })
+</script>

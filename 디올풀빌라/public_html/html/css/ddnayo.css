@@ -1,0 +1,497 @@
+/* 전체 가격표 */
+.room_rprice table .rprice td{padding:20px 0;}
+.room_rprice table .rprice p{padding:0;margin:0;}
+.room_rprice table .rprice .dc{color:#FF0C00;font-size:12px;}
+.room_rprice table .rprice .rate{color:#b3b3b3;text-decoration:line-through;margin-bottom:3px;/*font-family:"돋움",Arial;*/}
+.room_rprice table .rprice .sale{color:#000;font-size:14px;font-weight:bold;/*font-family:"돋움",Arial;*/}
+.sc0030 {color: #ff6666 !important;}
+.sc0010 {color: #5eb917 !important;}
+.sc0100 {color: #676767 !important;}
+#price {
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+
+.priceTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-top: 1px solid #999;
+  margin-bottom: 5%;
+}
+
+.priceTable tr {
+  border-bottom: 1px solid #999;
+}
+
+/* .priceTable tr:hover td, .priceTable tr:hover th {
+	background:red;
+} */
+
+.priceTable th,
+.priceTable td {
+  padding: 14px 2px !important;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.priceTable th {
+  background: #f9f9f9;
+  border-bottom: 2px solid #333;
+}
+
+.priceTable td.ss {
+  background: #f9f9f9;
+}
+
+.priceTable .type p:first-child {
+  font-size: 1.35em;
+  line-height: 2em;
+  font-weight: 700;
+}
+
+.nm {
+  width: 20%;
+}
+
+.sz {
+  width: 10%;
+}
+
+.ss {
+  width: 10%;
+}
+
+.wk {
+  width: 10%;
+}
+
+.ad {
+  width: 30%;
+}
+
+.price_scroll_guide {
+  line-height: 3;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .priceTable {
+    font-size: 0.8em;
+  }
+  .priceTable th,
+  td {
+    padding: 7px 2px !important;
+  }
+  .priceTable .type p:first-child {
+    line-height: 1.5em;
+  }
+  .nm {
+    width: 16%;
+  }
+  .sz {
+    width: 9%;
+  }
+  .ss {
+    width: 9%;
+  }
+  .wk {
+    width: 11%;
+  }
+  .ad {
+    width: 33%;
+  }
+}
+
+/* 객실 가격표 */
+
+.room_contents {
+  /* float:left; */
+}
+
+.room_contents::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.room_contents td {
+  line-height:1.8;
+  text-align:center;
+  padding:4px 0;
+}
+
+/* #room_des {
+	width:40%;
+	float:left;
+} */
+
+#room_daily_price2 {
+  width: 100%;
+  /*float: left;*/
+}
+
+.room_data li {
+  width: 100%;
+  float: left;
+  padding: 2%;
+}
+
+.room_data::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.room_contents {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.room_rprice {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+
+#tblRate {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.room_rprice tr:last-child {
+  border-bottom: 1px solid #999;
+}
+
+/* .room_rprice tr:hover td, .room_rprice tr:hover th {
+	background:red;
+} */
+
+.room_rprice th,
+.room_rprice td,
+ {
+  width: 20%;
+  padding: 10px 2px;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.room_rprice th {
+  background: #f9f9f9;
+  border-bottom: 2px solid #333;
+}
+
+.room_rprice td:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.room_rprice tr:first-child td {
+  font-size: 1.35em;
+  font-weight: 700;
+}
+
+.satur {
+  color: #007bff;
+}
+
+.sun {
+  color: #dc3545;
+}
+
+.soff {
+  color: #6c757d;
+}
+
+.son {
+  color: #17a2b8;
+}
+
+.sale {
+  /* font-family: 'Katibeh', cursive; */
+}
+
+.week_date {
+  background: #f9f9f9;
+  border-bottom: 2px solid #333;
+  text-align: center;
+  padding: 15px 2px;
+  border-top: 1px solid #999;
+}
+
+.week_date .prv,
+.week_date .next,
+.week_date #tit {
+  display: inline-block;
+}
+
+.week_date .prv::before,
+.week_date .next::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.week_date .prv::before {
+  content: '\f137';
+}
+
+.week_date .next::before {
+  content: '\f138';
+}
+
+.room_limit_table {
+  float: left;
+  /* width:25%;
+	padding-left:10px;
+  padding: 15px 2px; */
+  padding-bottom: 0;
+  padding-left: 10px;
+  line-height: 2;
+}
+
+.room_limit_table table tr:first-child {
+  border-bottom: 1px solid #333;
+  background: #f9f9f9;
+}
+
+.room_limit_table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 5px;
+  border-bottom: 1px solid #999;
+}
+
+.room_limit_table table th,
+.room_limit_table table td {
+  width: 20%;
+  padding: 10px 2px;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  /* font-weight: 400; */
+}
+
+.room_limit_table table th {
+  padding: 14px 2px;
+}
+
+/* .room_limit_table table th {
+	font-size: 1.35em;
+	line-height: 2em;
+	font-weight: 700;
+} */
+
+.room_contents_info::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.room_contents_info {
+  float: left;
+  width:100%;
+  padding-top: 2%;
+}
+
+.room_items {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.room_items .room_item_tit,
+.room_items .room_item_desc {
+  display: inline-block;
+  float: left;
+}
+
+.room_items .room_item_tit {
+  margin-right: 5px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.room_items .room_item_desc {
+  line-height: 2;
+  padding-left: 10px;
+}
+
+/* .room_items .room_item_desc p:first-child::before {display:none;} */
+
+/* .room_items .room_item_desc p::before {content:'/'; margin:0 7px;} */
+
+/* .room_items .room_item_desc p {float:left; } */
+
+.room_info_text {
+  width: 55%;
+  float: left;
+  margin-top: 3.5em;
+}
+
+.room_info_table {
+  width: 45%;
+  float: left;
+  padding-right: 5%;
+}
+
+.room_info_table .room_item_tit {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+  #price {
+    width: 100%;
+  }
+  .priceTable {
+    /* width:100%; */
+    min-width: 700px;
+  }
+  #tblRate {
+    min-width: 500px;
+    font-size: 0.9em;
+  }
+  .week_date {
+    padding: 7px 2px;
+  }
+  .room_rprice tr:first-child td {
+    padding: 7px 2px;
+    line-height: 1em;
+    font-size: 1.1em;
+  }
+  .room_rprice th,
+  .room_rprice td {
+    padding: 7px 2px;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 400;
+  }
+  .room_info_table,
+  .room_info_text {
+    width: 100%;
+    padding: 0;
+  }
+  .room_items,
+  .room_info_table {
+    margin-bottom: 2%;
+  }
+  .room_limit_table {
+    padding-left: 0;
+  }
+  .room_info_text {
+    margin-top: 0;
+  }
+  .room_limit_table {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 560px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 380px) {}
+  .roomPre {
+    overflow-y:scroll;
+  }
+  .roomPrePc {
+    position:relative;
+    min-width:640px;
+    min-width:560px;
+  }
+  .roomPreImg {
+    position:relative;
+    z-index:1;
+  }
+
+  .roomPrelist {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .roomPreli {
+    position:absolute!important;
+    min-width:4%!important;
+    min-width:40px!important;
+    width:4%;
+    height:auto!important;
+    top:0;
+    left:0;
+    display:inline-block;
+    overflow:hidden;
+    z-index:2;
+  }
+  .roomPreli[data-reverse="1"] .placement_name {
+    top:60%;
+  }
+  .roomPreli[data-reverse="1"] svg {
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+  }
+
+  .roomPreli svg {
+    float:left;
+  }
+
+  .placement_name {
+    position:absolute;
+    top:40%;
+    left:50%;
+    width:90%;
+    text-align:center;
+    line-height:1.1;
+    letter-spacing:-0.2px;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    word-break: keep-all;
+
+  }
+  .roomPreli img path {
+    float:left;
+    fill:#f5f5f5;
+  }
+  .roomPre_app {
+    text-align: right;
+  }
+  .roomPre_app .material-icons {
+    vertical-align: bottom;
+  }
+  @media (max-width: 560px) {
+    .roomPre_app {
+      font-size:12px;
+      padding: 2px 5px;
+      background: #cecece;
+      margin-top:2%;
+    }
+    .roomPre_app i {
+      font-size:20px;
+    }
+    .roomPre {
+      margin-top:0;
+    }
+  }
+
+
+
+	.cancelfee { width:100%; max-width:600px; border-collapse:collapse; border-top:1px solid #999; margin-top:5%;}
+	.cancelfee caption {display:none}
+	.cancelfee th, .cancelfee td { padding:12px 3px; font-size:1.07em; line-height:1.5em; text-align:center; border-bottom:1px solid #999; font-weight:400;}
+	.cancelfee th { background:#f9f9f9;}
+	.cancelfee .base th, .cancelfee .base td { color:#FF7800;}
+	.cancelfee thead { border-bottom:2px solid #333;}
