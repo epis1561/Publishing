@@ -1,0 +1,348 @@
+@charset "utf-8";
+@import "default.css";
+@font-face{
+    src:url("../css/font/NotoSansKR-Regular.ttf");
+    font-family: "reg";
+}
+@font-face{
+    src:url("../css/font/NotoSansKR-Medium.ttf");
+    font-family: "mid";
+}
+@font-face{
+    src:url("../css/font/NotoSansKR-Bold.ttf");
+    font-family: "bold";
+}
+@font-face{
+    src:url("../css/font/ROKAF\ Slab\ Serif\ Medium.ttf");
+    font-family: "roka";
+}
+.reg{
+    font-family: "reg";
+}
+.mid{
+    font-family: "mid";
+}
+.bold{
+    font-family: "bold";
+}
+.roka{
+    font-family: "roka";
+}
+.roka .text{
+    font-size: 30px;
+    color: #707070;
+}
+.margin{
+    margin-right: 10%;
+}
+.roka .link{
+    font-size: 24px;
+    color: #707070;
+    display: flex;
+    align-items: center;
+width: 20%;
+}
+.notice{
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    border: 1px solid #707070;
+    margin-bottom: 3%;
+    align-items: center;
+}
+.wrap-all{
+    width: 90%;
+    margin: 0 auto;
+}
+.roka .link a{
+width: 32px;
+height: 32px;
+border: 1px solid #707070;
+margin-right: 5px;
+display: inline-block;
+}
+.block{
+    margin-bottom: 3%;
+}
+.block img{
+    margin-bottom: 1%;
+}
+.textbox{
+    margin-left:3%;
+    font-size: 16px;
+    color: #707070;
+    line-height: 25px;
+}
+.block2 table{
+    margin-left: 3%;
+}
+.block3 table{
+    margin-left: 3%;
+}
+.block5 table{
+    margin-left: 3%;
+}
+.block6 table{
+    margin-left: 3%;
+}
+.block7 table{
+    margin-left: 3%;
+}
+.block6 span{
+    color: #E95165;
+    font-family: "bold";
+    font-size: 18px;
+    margin-left: 3%;
+}
+.block7 span{
+    color: #334654;
+    font-family: "bold";
+    font-size: 18px;
+    margin-left: 3%;
+}
+.block8 span{
+    color: #736FB2;
+    font-family: "bold";
+    font-size: 18px;
+}
+.block9 .textbox1{
+    font-family: "reg";
+    font-size: 16px;
+    color: #707070;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+.block9 .textbox1 span{
+    font-size: 18px;
+    color: #4B75B9;
+    font-family: "bold";
+}
+
+.reserbtn{
+    width: 300px;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+.reserbtn a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    font-family: "bold";
+    text-align: center;
+    color: #000;
+}
+.wrap-all{
+    padding-top: 7%;
+}
+/* 첫번쨰 테이블 */
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:1%;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:3px 5px;word-break:normal;}
+.tg .tg-6k2m{font-family: "mid"; background-color:#fff5e6;border-color:#b5b5b5;font-size:16px;text-align:left;vertical-align:middle}
+.tg .tg-wzcg{font-size: 16px; font-family: "mid"; background-color:#fff5e6;border-color:#b5b5b5;text-align:left;vertical-align:middle}
+.tg .tg-uwuu{background-color:#ef7517;border-color:#ffffff;color:#ffffff;font-size:16px;text-align:center;font-family: "bold";}
+.tg .tg-o6rn{font-family: "mid"; font-size: 16px; border-color:#b5b5b5;text-align:left;vertical-align:middle}
+.tg .tg-dp98{font-family: "bold"; background-color:#f5ad41;border-color:#ffffff;font-size:16px;text-align:center;vertical-align:middle}
+.tg .tg-hje7{font-family: "bold"; border-color:#b5b5b5;text-align:center;vertical-align:middle}
+
+/* 두번째 테이블 */
+.table2  {border-collapse:collapse;border-spacing:0;}
+.table2 td{border-color:#b5b5b5;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:1%;word-break:normal;}
+.table2 th{border-color:#b5b5b5;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:3px 5px;word-break:normal;}
+.table2 .tg-8y9u{font-family: "mid";font-size: 16px; background-color:#ffffff;border-color:#b5b5b5;text-align:left;vertical-align:middle}
+.table2 .tg-gejq{font-family: "bold";font-size: 16px; background-color:#7570b2;border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top}
+.table2 .tg-4tzc{font-family: "bold";font-size: 16px; background-color:#7570b2;border-color:#ffffff;color:#ffffff;font-size:16px;text-align:center;vertical-align:top}
+.table2 .tg-etif{font-family: "bold";font-size: 16px; background-color:#ada9d5;border-color:#ffffff;text-align:center;vertical-align:middle}
+
+/* 세번째 테이블 */
+.table3{border-collapse:collapse;border-spacing:0;}
+.table3 td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:3px 5px;word-break:normal;}
+.table3 th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:3px 5px;word-break:normal;}
+.table3 .tg-zlp6{font-family: "bold"; font-size: 16px; background-color:#00a69c;border-color:inherit;color:#ffffff;text-align:center;vertical-align:middle}
+.table3 .tg-ennh{font-family: "bold"; font-size: 16px;border-color:#b5b5b5;text-align:left;vertical-align:top}
+.table3 .tg-qx3k{font-family: "bold"; font-size: 16px; background-color:#00a69c;border-color:#ffffff;color:#ffffff;font-size:16px;text-align:center;vertical-align:middle}
+.table3 .tg-n44s{font-family: "bold"; font-size: 16px; background-color:#acd1ce;border-color:#ffffff;text-align:center;vertical-align:middle}
+.table3 .tg-hje7{font-family: "bold"; font-size: 16px;border-color:#b5b5b5;text-align:center;vertical-align:middle}
+.table3 .tg-btxt{font-family: "bold"; font-size: 16px;border-color:#b5b5b5;text-align:center;vertical-align:top}
+
+/* 네번째 테이블 */
+.table4{border-collapse:collapse;border-spacing:0;}
+.table4 td{font-family:"bold";border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:3px 5px;word-break:normal;}
+.table4 th{font-family:"bold";border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.table4 .tg-oq02{font-size: 16px;font-family:"bold";border-color:#b5b5b5;color:#e95165;text-align:center;vertical-align:top}
+.table4 .tg-qsr2{font-size: 16px;font-family:"bold";background-color:#e95165;border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:middle}
+.table4 .tg-shsw{font-size: 16px;font-family:"bold";background-color:#efb9c0;border-color:#ffffff;text-align:center;vertical-align:top}
+.table4 .tg-btxt{font-size: 16px;font-family:"bold";border-color:#b5b5b5;text-align:center;vertical-align:top}
+
+/* 다섯번째 테이블 */
+.table5  {border-collapse:collapse;border-spacing:0;}
+.table5 td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.table5 th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.table5 .tg-sbgg{font-size: 16px;font-family:"bold";background-color:#334654;border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:middle}
+.table5 .tg-mm73{font-size: 16px;font-family:"bold";background-color:#d2d9de;border-color:#ffffff;text-align:center;vertical-align:middle}
+.table5 .tg-hje7{font-size: 16px;font-family:"bold";border-color:#b5b5b5;text-align:center;vertical-align:middle}
+
+.link-m{
+    display:none;align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #707070;
+    margin-bottom: 3%;
+    justify-content: center;
+    gap: 5%;padding: 1%;
+}
+.link-m div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    width: 20%;
+}
+.link-m a{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    border: 1px solid #707070;
+}
+.link-m label{
+    font-size: 14px;
+}
+.mobil{
+    display: none;
+}
+@media(max-width:1200px){
+    .roka .text{
+        font-size: 22px;
+    }
+    .roka .link{
+        font-size: 18px;
+        width: 30%;
+    }
+    .wrap-all{
+        padding-top: 12%;
+    }
+    .textbox{
+        font-size: 14px;
+    }
+    .tg .tg-6k2m,.tg .tg-wzcg,.tg .tg-uwuu,.tg .tg-o6rn,.tg .tg-dp98,.tg .tg-hje7,.table2 .tg-8y9u,
+    .table2 .tg-gejq,.table2 .tg-4tzc,.table2 .tg-etif,.table3 .tg-zlp6,.table3 .tg-ennh,.table3 .tg-qx3k
+    ,.table3 .tg-n44s,.table3 .tg-hje7,.table3 .tg-btxt,.table4 .tg-oq02,.table4 .tg-qsr2,.table4 .tg-shsw
+    ,.table4 .tg-btxt,.table5 .tg-sbgg,.table5 .tg-mm73,.table5 .tg-hje7{
+        font-size: 12px;
+    }
+    .block6 span,.block7 span,.block8 span,.block9 .textbox1 span{
+        font-size: 15px;
+    }
+    .block9 .textbox1 span{
+        font-size: 16px;
+    }
+}
+@media(max-width:991px){
+    .roka .link{
+        font-size: 14px;
+    }
+    .roka .text{
+        font-size: 18px;
+    }
+    .roka .link a{
+        width: 25px;
+        height: 25px;
+    }
+    table{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .reserbtn{
+        width: 180px;
+        height: 30px;
+    }
+    .reserbtn a{
+        font-size: 20px;
+    }
+    .wrap-all{
+        width: 100%;
+    }
+    .block img{
+       margin-left: 4%;
+    }
+
+}
+@media(max-width:768px){
+    .roka .link{
+        display: none;
+    }
+    .notice{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        margin-bottom: 3%;
+    }
+    .link-m{
+        display: flex;
+        font-family: "roka";
+        font-size: 14px;
+        color: #707070;
+    }
+    .block img{
+        display: none;
+    }
+    .mobil{
+        display: block !important;
+    }
+}
+@media(max-width:500px){
+    .tg .tg-6k2m, .tg .tg-wzcg, .tg .tg-uwuu, .tg .tg-o6rn, .tg .tg-dp98, .tg .tg-hje7, .table2 .tg-8y9u, .table2 .tg-gejq, .table2 .tg-4tzc, .table2 .tg-etif, .table3 .tg-zlp6, .table3 .tg-ennh, .table3 .tg-qx3k, .table3 .tg-n44s, .table3 .tg-hje7, .table3 .tg-btxt, .table4 .tg-oq02, .table4 .tg-qsr2, .table4 .tg-shsw, .table4 .tg-btxt, .table5 .tg-sbgg, .table5 .tg-mm73, .table5 .tg-hje7{
+        font-size: 10px;
+    }
+    .textbox{
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    .wrap-all{
+        padding-top: 30%;
+    }
+    .roka .text{
+        font-size: 14px;
+    }
+    .block{
+        margin-bottom: 6%;
+    }
+    .link-m div{
+        width: 30%;
+    }
+    .block9 .textbox1{
+        font-size: 14px;
+    }
+    .block9 .textbox1 span{
+        font-size: 14px;
+    }
+}
+@media(max-width:320px){
+    .tg .tg-6k2m, .tg .tg-wzcg, .tg .tg-uwuu, .tg .tg-o6rn, .tg .tg-dp98, .tg .tg-hje7, .table2 .tg-8y9u, .table2 .tg-gejq, .table2 .tg-4tzc, .table2 .tg-etif, .table3 .tg-zlp6, .table3 .tg-ennh, .table3 .tg-qx3k, .table3 .tg-n44s, .table3 .tg-hje7, .table3 .tg-btxt, .table4 .tg-oq02, .table4 .tg-qsr2, .table4 .tg-shsw, .table4 .tg-btxt, .table5 .tg-sbgg, .table5 .tg-mm73, .table5 .tg-hje7{
+        font-size: 9px;
+    }
+    .link-m label{
+        font-size: 12px;
+    }
+
+    .link-m a{
+        width: 15px;
+        height: 15px;
+    }
+}

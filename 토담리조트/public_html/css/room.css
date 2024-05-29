@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+
+@font-face {
+    src: url("../css/font/강원교육모두-Light.woff");
+    font-family:"edu";
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+.roomwrap .Titlebox{
+    padding-top: 12%
+}
+.roomwrap .Titlebox h1{
+font-family: 'GangwonEdu_OTFBoldA';
+font-size: 60px;
+color: #454546;
+margin-bottom: 44px;
+}
+
+.roomwrap .Titlebox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 18px;
+    color: #6E6E6E;
+    margin-bottom: 90px;
+}
+.roomwrap .subnav .navwrap a{
+    font-family: 'NanumSquareNeo';
+
+    color: #565656;
+    font-size: 20px;
+    line-height: 120px;
+   
+}
+.roomwrap .subnav .navwrap a:hover{
+    font-weight: bold;
+    color: #6e6e6e;
+}
+.roomwrap .subnav .navwrap span{
+    color: #6E6E6E;
+    font-size: 20px;
+    line-height: 120px;
+    display: inline-block;
+    margin: 0 1%;
+}
+
+.roomwrap .subnav{
+    height: 120px;
+    background-color: #F9F9F9;
+    margin-bottom: 60px;
+}
+.roomwrap .subnav .navwrap{
+    display: flex;
+    justify-content: start;
+   margin-left: 10%;
+}
+
+.roomwrap .roomlist{
+    width: 49%;
+    
+}
+.roomswiper{
+    margin-bottom: 44px;
+}
+
+.roomwrap img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.roomwrap .container .roomlist .info .topbox h1{
+    font-family: 'NanumSquareNeo';
+    font-size: 22px;
+    color: #454546;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.roomwrap .container .roomlist .info .topbox p{
+    font-family: 'NanumSquareNeo';
+    font-weight: lighter;
+    font-size: 16px;
+    color: #6E6E6E;
+    margin-bottom: 30px;
+}
+.topbox{
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 30px;
+}
+.roomlist .bottombox .flexbox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 16px;
+    color: #454546;
+    font-weight: bold;
+    width: 30%;
+}
+.roomlist .bottombox .flexbox span{
+    color: #6E6E6E;
+    font-weight: lighter;
+    margin-left: 3%;
+}
+.flexbox #space{
+   letter-spacing: 7.68px;
+}
+.flexbox{
+    display: flex;
+    margin-bottom: 10px;
+}
+.flexbox #space span{
+    letter-spacing: 0;
+}
+
+.roomlist .bottombox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 16px;
+    color: #454546;
+    font-weight: bold;
+}
+
+
+.roomlist .bottombox p span{
+    color: #6E6E6E;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+#roomflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 88px;
+}
+.roomlist:nth-child(1),.roomlist:nth-child(3){
+    margin-right: 2%;
+}
+.roomlist:nth-child(1),.roomlist:nth-child(2){
+    margin-bottom: 4%;
+}
+
+
+
+/* 모바일css 시작!!!!!! */
+.room-m{
+    display: none;
+}
+.roomwrap-m{
+
+width: 90%;
+margin: 0 auto;
+max-height: auto;
+position: relative;
+padding-bottom: 20%;
+}
+.roomwrap-m .Titlebox{
+    padding-top: 20%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.roomwrap-m .Titlebox h1{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.roomwrap-m .Titlebox p{
+font-family: 'NanumSquareNeo';
+font-size: 14px;
+font-weight: lighter;
+color: #6E6E6E;
+line-height: 25px;
+margin-bottom: 40px;
+}
+.swiper{
+    margin-bottom: 20px;
+    }
+    .swiper-wrapper{
+        height: auto !important;
+    }
+.roomwrap-m .roomswiper-m img{
+width: 100%;
+object-fit: cover;
+height: 100%;
+}
+.roomwrap-m .topbox h1{
+    font-family: 'NanumSquareNeo';
+    font-size: 20px;
+    font-weight: bold;
+    color: #454546;
+    margin-bottom: 10px;
+}
+.roomwrap-m .topbox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 10px;
+    color: #6E6E6E;
+    font-weight: lighter;
+    line-height: 30px;
+}
+.roomwrap-m .bottombox p{
+    font-family: 'NanumSquareNeo';
+    font-size: 10px;
+    font-weight: bold;
+    color: #6e6e6e;
+    vertical-align: top;
+}
+.roomwrap-m .bottombox span{
+    font-family: 'NanumSquareNeo';
+    font-size: 10px;
+    color: #6e6e6e;
+    font-weight: lighter;
+
+}
+.roomwrap-m .bottombox .flex2 span{
+    margin-left: 5px;
+}
+.roomwrap-m .flex2{
+    display: flex;
+    align-items: baseline;
+}
+.roomwrap-m #space{
+    margin-right: 10px;
+}
+.roomwrap-m #space2{
+    margin-left: 10px;
+}
+
+.roomwrap-m .navbtn1 #btn1{
+position: absolute;
+left: 30%;
+bottom: 4%;
+cursor: pointer;
+}
+.roomwrap-m .navbtn1 #btn2{
+position: absolute;
+right: 30%;
+bottom: 4%;
+cursor: pointer;
+}
+.m-nav .navwrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+   width: 90%;
+   margin: 0 auto;
+}
+.m-nav .navwrap li{
+    font-weight: bold;
+    width: 46.5%;
+    text-align: center;
+    cursor: pointer;
+    padding: 7px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-bottom: 5%;
+}
+@media(max-width:500px){
+    .topbox{
+        margin-bottom: 15px;
+    } 
+    .roomwrap-m .topbox p{
+        line-height: 14px;
+        margin-bottom: 14px;
+    }
+    .roomwrap-m .Titlebox{
+        padding-top: 35%;
+    }
+}
+
+
+
+@media(max-width:768px){
+.roomwrap{
+    display: none;
+}
+.room-m{
+    display: block;
+}
+}
+
+@media(max-width:325px){
+    .roomwrap-m .Titlebox{
+        padding-top: 45%;
+    }
+    .roomwrap-m{
+        padding-bottom: 20%;
+    }
+    .roomwrap-m .navbtn1 #btn1{
+        left: 27% !important;
+        bottom: 3%;
+    }
+    .roomwrap-m .navbtn1 #btn2{
+        right: 27% !important;
+        bottom: 3%;
+    }
+}
+
+@media(max-width:285px){
+    .roomwrap-m .topbox h1{
+        margin-bottom: 10px;
+    }
+}
