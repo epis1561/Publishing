@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+
+.map1{
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.map1 h2{
+    font-size: 35px;
+    text-align: center; 
+    font-family: 'medium';
+}
+
+.map1 h2::after{
+    content:'';
+display: block;
+width: 4%;
+height: 2px;
+background-color:#000;
+margin: 0 auto;
+margin-top: 35px;
+margin-bottom: 70px;
+}
+
+.map1 p{
+    font-size: 14px;
+    color: #505050;
+    line-height: 25px;
+    margin-bottom: 65px;
+    font-family: 'medium';
+}
+#map{
+    width: 80%;
+    margin: 0 auto;
+    height: 650px;
+
+}
+@media(max-width:991px){
+    iframe{
+width: 80%;
+margin: 0 auto;
+max-height:350px;
+    }
+}
+
+@media(max-width:768px){
+    #map{
+        height: 450px;
+    }  
+}
+@media(max-width:500px){
+    #map{
+        width: 90%;
+        height: 350px;
+    }
+    .map1 h2{
+        font-size: 24px;
+    }
+    .map1 h2::after{
+        width: 18%;
+        margin-top: 7%;
+        margin-bottom: 5%;
+    }
+    .map1 p{
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 5%;
+    }
+    iframe{
+        max-height: 250px;
+    }
+    .map1{
+        margin-bottom: 12%;
+    }
+}
